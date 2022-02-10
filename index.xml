@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Pinjun Zheng</title>
+    <link>https://example.com/</link>
+    <description>Recent content in About on Pinjun Zheng</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://example.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/about/</guid>
+      <description>About Me  I am a Ph.D. student at King Abdullah University of Science and Technology (KAUST), majoring in Electrical and Computer Engineering (ECE). I currently work in the Information System Lab (ISL), under the supervision of Prof. Tareq Al-Naffouri. Before that, I got my Bachelor and Master degree at Harbin Institute of Technology (HIT). My research interests are terahertz localization and phase retrieval problem.
+Education profile Ph.D student, Electrical and Computer Engineering, KAUST, 2021-present.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://example.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/contact/</guid>
+      <description> Email: pinjun.zheng@kaust.edu.sa  </description>
+    </item>
+    
+  </channel>
+</rss>
