@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/academic-homepage/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/global.css">
 </head>
 <body class="bg-light" >
     <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top mb-5 shadow-sm">
@@ -28,11 +28,11 @@
             <ul class="navbar-nav ml-auto">
                 
                 <li class="nav-item active">
-                    <a class="nav-link" href="/academic-homepage/">Home</a>
+                    <a class="nav-link" href="/">Home</a>
                 </li>
                 
                 <li class="nav-item ">
-                    <a class="nav-link" href="/academic-homepage/publications">Publications</a>
+                    <a class="nav-link" href="/publications">Publications</a>
                 </li>
                 
             </ul>
@@ -52,10 +52,10 @@
                         </div>
                         <div class="text-profile-position">
                             
-                            <img src="/academic-homepage/assets/images/badges/logo_UBC.png" alt="Logo" class="inline-badge"/>
+                            <img src="/assets/images/badges/logo_UBC.png" alt="Logo" class="inline-badge"/>
                             Incoming postdoctoral research fellow @ The University of British Columbia<br/>
                             
-                            <img src="/academic-homepage/assets/images/badges/logo_KAUST.png" alt="Logo" class="inline-badge"/>
+                            <img src="/assets/images/badges/logo_KAUST.png" alt="Logo" class="inline-badge"/>
                             Ph.D. candidate @ King Abdullah University of Science and Technology<br/>
                             
                         </div>
@@ -68,7 +68,7 @@
                     <div class="col-md-auto">
                         <figure class="figure">
                             <img 
-                                src="/academic-homepage/assets/images/photos/portrait.jpg" 
+                                src="/assets/images/photos/portrait.jpg" 
                                 class="figure-img img-fluid img-thumbnail" 
                                 style="height: 200px;"
                                 data-toggle="tooltip" 
@@ -131,7 +131,7 @@
             <h5><i class="fas fa-exclamation-triangle"></i> Action required</h5>
             <strong>Problem:</strong>
             The current root path of this site is "<code class="root-path-text"></code>",
-            which does not match the <code>baseurl</code> ("<code>/academic-homepage</code>") configured in <code>_config.yml</code>.
+            which does not match the <code>baseurl</code> ("<code></code>") configured in <code>_config.yml</code>.
             <br>
 
             <strong>Solution:</strong>
@@ -142,7 +142,7 @@
 
 <script>
 striped_pathname = location.pathname.replace(/\/+$/, "");
-if(striped_pathname != "/academic-homepage"){
+if(striped_pathname != ""){
     document.getElementById("url-debug-message").classList.remove('d-none');
 }
 document.querySelectorAll(".root-path-text").forEach(function(element){
@@ -164,7 +164,7 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
                             <ul class="list-unstyled mb-1">
                                 
                                 <li class="media mb-1">
-                                    <img src="/academic-homepage/assets/images/badges/logo_KAUST.png" alt="King Abdullah University of Science and Technology" style="width: 18px;" class="mr-1 mt-1">
+                                    <img src="/assets/images/badges/logo_KAUST.png" alt="King Abdullah University of Science and Technology" style="width: 18px;" class="mr-1 mt-1">
                                     <div class="media-body">
                                         <div>King Abdullah University of Science and Technology</div>
                                         <div class="small"></div>
@@ -176,7 +176,7 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
                                 </li>
                                 
                                 <li class="media mb-1">
-                                    <img src="/academic-homepage/assets/images/badges/logo_HIT.png" alt="Harbin Institute of Technology" style="width: 18px;" class="mr-1 mt-1">
+                                    <img src="/assets/images/badges/logo_HIT.png" alt="Harbin Institute of Technology" style="width: 18px;" class="mr-1 mt-1">
                                     <div class="media-body">
                                         <div>Harbin Institute of Technology</div>
                                         <div class="small"></div>
@@ -188,7 +188,7 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
                                 </li>
                                 
                                 <li class="media mb-1">
-                                    <img src="/academic-homepage/assets/images/badges/logo_HIT.png" alt="Harbin Institute of Technology" style="width: 18px;" class="mr-1 mt-1">
+                                    <img src="/assets/images/badges/logo_HIT.png" alt="Harbin Institute of Technology" style="width: 18px;" class="mr-1 mt-1">
                                     <div class="media-body">
                                         <div>Harbin Institute of Technology</div>
                                         <div class="small"></div>
@@ -369,7 +369,7 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
     <script src="https://cdnjs.cloudflare.com/ajax/libs/github-buttons/2.14.2/buttons.min.js" integrity="sha512-OYwZx04hKFeFNYrWxIyo3atgGpb+cxU0ENWBZs72X7T9U+NoHPM1ftUn/Mfw7dRDXrqWA6M1wBg6z6fGE32aeA==" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-    <script src="/academic-homepage/assets/js/common.js"></script>
-    <script src="/academic-homepage/assets/js/bubble_visual_hash.js"></script>
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/bubble_visual_hash.js"></script>
 </body>
 </html>
