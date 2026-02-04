@@ -4,49 +4,165 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Showcase - Pinjun Zheng's Homepage</title>
+    <title>Pinjun Zheng</title>
+    <!-- <link rel="icon" type="image/svg" href="/assets/images/pointer_xs.svg"> -->
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Zilla+Slab+Highlight:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/global.css">
+
+    <style>
+        body {
+          font-size: 0.9rem;
+        }
+        /* h1, h2, h3, h4, h5, h6 {
+          font-size: inherit;
+        } */
+
+        a {
+        /* color: #21356a; */
+        color: #0056b3;
+        text-decoration: none; /* no underline */
+        }
+
+        a:hover {
+        color: #ff6f61;
+        text-decoration: underline;
+        }
+
+        /* .bd-callout {
+            background-color: #fff8dc;
+            border-left: 4px solid #f0ad4e;
+            padding: 1em 1.2em;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        } */
+
+        .bd-callout {
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+            padding: 1.25rem;
+            border-width: 1px 1px 1px 0.25rem;
+            border-style: solid;
+            border-color: rgb(238, 238, 238);
+            border-image: initial;
+            border-radius: 0.25rem;
+        }
+
+        .bd-callout-info {
+            /* border-left-color: rgb(91, 192, 222); */
+            border-left-color: #ff6f61;
+        }
+    </style>
 </head>
 <body class="bg-light" >
-    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top mb-5 shadow-sm">
-    <div class="container">
-        <a class="navbar-brand"><strong>Pinjun Zheng's Homepage</strong></a>
-        <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-map"></i> Menu
-        </button>
+    <style>
+  /* ===== Navbar with Subtle Background Image ===== */
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                
-                <li class="nav-item ">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                
-                <li class="nav-item ">
-                    <a class="nav-link" href="/publications">Publications</a>
-                </li>
-                
-            </ul>
-        </div>
+  .navbar-academic {
+    position: relative;
+    background-color: #f2f4f8;
+    border-bottom: 1px solid #d8dde6;
+    font-size: 1.5rem;
+    overflow: hidden;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  /* background layer */
+  .navbar-academic::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/assets/images/photos/navbar-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;   
+    z-index: 0;
+  }
+
+  /* front layer */
+  .navbar-academic > .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .navbar-academic .navbar-brand {
+    color: #1f2a44;
+    font-family: "Libre Baskerville", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 0.03em;
+  }
+
+  .navbar-academic .nav-link {
+    color: #3b455f;
+    margin-left: 1rem;
+  }
+
+  .navbar-academic .nav-link:hover,
+  .navbar-academic .nav-item.active .nav-link {
+    color: #004a99;
+    font-weight: 600;
+  }
+</style>
+
+<nav class="navbar navbar-expand-sm navbar-academic fixed-top shadow-sm">
+  <div class="container" style="max-width: 1400px;">
+    <a class="navbar-brand" href="/">
+      Pinjun Zheng
+    </a>
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            Home
+          </a>
+        </li>
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/research">
+            Research
+          </a>
+        </li>
+        
+      </ul>
     </div>
+  </div>
 </nav>
-
-    <div class="container">
+    <!-- <div class="container-xl"> -->
+    <div class="container" style="max-width: 1700px;">
         
 
-<div class="row grid">
+
+<h1></h1>
+<div class="row grid mb-4">
     <div class="grid-sizer col-1"></div>
     
-    <div class="p-2 grid-item col-md-6 col-sm-9 col-12">
+    <div class="p-2 grid-item col-md-8 col-sm-12 col-12">
         <div class="card border-0 shadow-sm bg-white">
             <div class="p-4">
     <h2>Welcome to Showcase!</h2>
@@ -57,31 +173,86 @@
     <p>
         You can create a new showcase item by creating a new file in the <code>_showcase</code> folder. It gives you the highest flexibility to customize the item using any HTML code.
     </p>
-</div>
-
-        </div>
-    </div>
-    
-    <div class="p-2 grid-item col-md-4 col-sm-6 col-12">
-        <div class="card border-0 shadow-sm bg-white">
-            <div>
-  <img data-src="https://api.star-history.com/svg?repos=luost26/academic-homepage&amp;type=Date)](https://star-history.com/#luost26/academic-homepage&amp;Date" class="lazy w-100 rounded-sm" src="/assets/images/empty_300x200.png" />
-  <div class="card-body">
-    <h5 class="card-title">GitHub Star History</h5>
-    <p class="card-text">
-      This image shows the star history of the GitHub repository of this website.
+    <p>
+        Cards are ordered by the <code>date</code> field in the front matter in descending order. The <code>width</code> field is used to determine the width of the card, ranging from 1 to 12.
+        Layout is done by the <a href="https://masonry.desandro.com/" target="_blank">Masonry</a> library.
     </p>
-    <p class="card-text"><small><a href="https://github.com/luost26/academic-homepage" target="_blank">Give a star!</a></small></p>
-  </div>
+    <p>
+        For a tidy layout, it is recommended to set the width of the cards to be either multiple of 3 or multiple of 4 for all cards, except for small badges that do not take up much space (width=1).
+    </p>
 </div>
 
         </div>
     </div>
     
-    <div class="p-2 grid-item col-md-4 col-sm-6 col-12">
+    <div class="p-2 grid-item col-md-4 col-sm-6 col-6">
         <div class="card border-0 shadow-sm bg-white">
             <div>
-  <img data-src="/assets/images/covers/cover1.jpg" class="lazy w-100 rounded-sm" src="/assets/images/empty_300x200.png" />
+    <div id="showcase-default-photo-collection" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            
+            <li data-target="#showcase-default-photo-collection" data-slide-to="0" class="active"></li>
+            
+            <li data-target="#showcase-default-photo-collection" data-slide-to="1"></li>
+            
+            <li data-target="#showcase-default-photo-collection" data-slide-to="2"></li>
+            
+        </ol>
+        <div class="carousel-inner" style="height: 295px;">
+            
+            <div class="carousel-item active">
+                <a href="https://picsum.photos/" target="_blank">
+                <div class="lazy always-load d-block rounded-xl" data-src="https://picsum.photos/seed/first1111/800/800" style="height: 295px;">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Photo 1</h5>
+                    <p>Description 1.</p>
+                </div>
+                </a>
+            </div>
+            
+            <div class="carousel-item ">
+                
+                <div class="lazy always-load d-block rounded-xl" data-src="https://picsum.photos/seed/second22/800/800" style="height: 295px;">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Photo 2</h5>
+                    <p>Description 2</p>
+                </div>
+                
+            </div>
+            
+            <div class="carousel-item ">
+                
+                <div class="lazy always-load d-block rounded-xl" data-src="https://picsum.photos/seed/third33/800/800" style="height: 295px;">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="carousel-control-prev" type="button" data-target="#showcase-default-photo-collection" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </div>
+        <div class="carousel-control-next" type="button" data-target="#showcase-default-photo-collection" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+    
+    <div class="p-2 grid-item col-md-4 col-sm-6 col-6">
+        <div class="card border-0 shadow-sm bg-white">
+            <div>
+  <img data-src="/assets/images/covers/cover1.jpg" class="lazy w-100 rounded-xl" src="/assets/images/empty_300x200.png" />
 
   <div class="card-img-overlay" style="overflow: scroll; background: rgb(255,255,255,0.8)">
     <h5 class="card-title">Image Lazyload</h5>
@@ -91,7 +262,7 @@
     </p>
     <p class="card-text">
       
-      <code>&lt;img data-src=&quot;[Image URL]&quot; class=&quot;lazy w-100 rounded-sm&quot; src=&quot;{{ '/assets/images/empty_300x200.png' | relative_url }}&quot;&gt;</code>
+      <code>&lt;img data-src=&quot;[Image URL]&quot; class=&quot;lazy w-100 rounded-xl&quot; src=&quot;{{ '/assets/images/empty_300x200.png' | relative_url }}&quot;&gt;</code>
       
     </p>
   </div>
@@ -100,16 +271,7 @@
         </div>
     </div>
     
-    <div class="p-2 grid-item col-md-2 col-sm-3 col-6">
-        <div class="card border-0 shadow-sm bg-white">
-            <div>
-<img src="/assets/images/photos/portrait.jpg" class="img-fluid rounded" />
-</div>
-
-        </div>
-    </div>
-    
-    <div class="p-2 grid-item col-md-2 col-sm-3 col-6">
+    <div class="p-2 grid-item col-md-4 col-sm-6 col-6">
         <div class="card border-0 shadow-sm bg-white">
             <div class="p-4">
     <h5>Disable Showcase Page?</h5>
@@ -122,93 +284,53 @@
         </div>
     </div>
     
-    <div class="p-2 grid-item col-md-2 col-sm-3 col-6">
+    <div class="p-2 grid-item col-md-4 col-sm-6 col-6">
         <div class="card border-0 shadow-sm bg-white">
             <div>
-    <img data-src="/assets/images/photos/portrait.jpg" class="lazy w-100 rounded-sm" src="/assets/images/empty_300x200.png" />
-</div>
-
-
-        </div>
-    </div>
-    
-    <div class="p-2 grid-item col-md-4 col-sm-6 col-12">
-        <div class="card border-0 shadow-sm bg-white">
-            <div>
-    <div id="showcase-photo-collection" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            
-            <li data-target="#showcase-photo-collection" data-slide-to="0" class="active"></li>
-            
-            <li data-target="#showcase-photo-collection" data-slide-to="1"></li>
-            
-            <li data-target="#showcase-photo-collection" data-slide-to="2"></li>
-            
-        </ol>
-        <div class="carousel-inner" style="height: 300px;">
-            
-            <div class="carousel-item active">
-                <a href="https://picsum.photos/" target="_blank">
-                <div class="lazy d-block rounded-sm" data-src="https://picsum.photos/seed/first1111/800/800" style="height: 300px;">
-                </div>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Photo 1</h5>
-                    <p>Description 1.</p>
-                </div>
-                </a>
-            </div>
-            
-            <div class="carousel-item ">
-                
-                <div class="lazy d-block rounded-sm" data-src="https://picsum.photos/seed/second22/800/800" style="height: 300px;">
-                </div>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Photo 2</h5>
-                    <p>Description 2</p>
-                </div>
-                
-            </div>
-            
-            <div class="carousel-item ">
-                
-                <div class="lazy d-block rounded-sm" data-src="https://picsum.photos/seed/third33/800/800" style="height: 300px;">
-                </div>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5></h5>
-                    <p></p>
-                </div>
-                
-            </div>
-            
-        </div>
-        <div class="carousel-control-prev" type="button" data-target="#showcase-photo-collection" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </div>
-        <div class="carousel-control-next" type="button" data-target="#showcase-photo-collection" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </div>
-    </div>
-</div>
-
-
-        </div>
-    </div>
-    
-    <div class="p-2 grid-item col-md-1 col-sm-2 col-3">
-        <div class="card border-0 shadow-sm bg-white">
-            <div>
-<img src="/assets/images/badges/MIT_Social_circle.png" class="img-fluid rounded" />
+  <img data-src="https://api.star-history.com/svg?repos=luost26/academic-homepage&amp;type=Date" class="lazy w-100 rounded-xl-top" src="/assets/images/empty_300x200.png" />
+  <div class="card-body">
+    <h5 class="card-title">GitHub Star History</h5>
+    <p class="card-text">
+      This image shows the star history of the GitHub repository of this website.
+    </p>
+    <p class="card-text"><small><a href="https://github.com/luost26/academic-homepage" target="_blank">Give a star!</a></small></p>
+  </div>
 </div>
 
         </div>
     </div>
     
-    <div class="p-2 grid-item col-md-1 col-sm-2 col-3">
+    <div class="p-2 grid-item col-md-4 col-sm-6 col-6">
         <div class="card border-0 shadow-sm bg-white">
+            <div class="p-4 text-center">
+$a^2 + b^2 = c^2$
+</div>
+
+        </div>
+    </div>
+    
+    <div class="p-2 grid-item col-md-1 col-sm-2 col-2">
+        <div class="">
             <div>
-<img src="/assets/images/badges/PKU_red.png" class="img-fluid rounded" />
+<img src="/assets/images/badges/PKU_red.png" class="img-fluid rounded-xl" />
+</div>
+
+        </div>
+    </div>
+    
+    <div class="p-2 grid-item col-md-1 col-sm-2 col-2">
+        <div class="">
+            <div>
+<img src="/assets/images/badges/MIT_Social_circle.png" class="img-fluid rounded-xl" />
+</div>
+
+        </div>
+    </div>
+    
+    <div class="p-2 grid-item col-md-1 col-sm-2 col-2">
+        <div class="">
+            <div>
+<img src="/assets/images/etc/tim_the_beaver.png" class="img-fluid rounded-xl" />
 </div>
 
         </div>
@@ -216,22 +338,89 @@
     
 </div>
 
+<h1>Cats</h1>
+<div class="row grid mb-4">
+    <div class="grid-sizer col-1"></div>
+    
+    <div class="p-2 grid-item col-md-3 col-sm-6 col-6">
+        <div class="card border-0 shadow-sm bg-white">
+            <div>
+<a href="https://unsplash.com/photos/russian-blue-cat-standing-near-ceramic-vase-with-artificial-flowers-Vv45XEMJWZk" target="_blank">
+    <img data-src="https://images.unsplash.com/photo-1497473376897-16fbb7552478?q=80&amp;w=2970&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="lazy w-100 rounded-xl" src="/assets/images/empty_300x200.png" />
+</a>
+</div>
+
+        </div>
     </div>
-    <footer class="footer">
-    <div class="container">
+    
+    <div class="p-2 grid-item col-md-3 col-sm-6 col-6">
+        <div class="card border-0 shadow-sm bg-white">
+            <div>
+<img src="/assets/images/etc/cat1.jpg" class="img-fluid rounded-xl" />
+</div>
+
+        </div>
+    </div>
+    
+    <div class="p-2 grid-item col-md-3 col-sm-6 col-6">
+        <div class="card border-0 shadow-sm bg-white">
+            <div>
+    <img data-src="/assets/images/etc/cat2.jpg" class="lazy w-100 rounded-xl" src="/assets/images/empty_300x200.png" data-toggle="tooltip" data-placement="top" title="Caption of this image" />
+</div>
+
+        </div>
+    </div>
+    
+    <div class="p-2 grid-item col-md-3 col-sm-6 col-6">
+        <div class="card border-0 shadow-sm bg-white">
+            <div>
+  <img data-src="https://images.unsplash.com/photo-1536070800722-f1a29a336bc7?q=80&amp;w=2970&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="lazy w-100 rounded-xl-top" src="/assets/images/empty_300x200.png" />
+  <div class="card-body">
+    <p class="card-text">
+      Meow! I am a cat. <a href="https://unsplash.com/photos/russian-blue-cat-in-close-up-photography-1pjqSWDcgwo" target="_blank">Unsplash</a>
+    </p>
+  </div>
+</div>
+
+        </div>
+    </div>
+    
+    <div class="p-2 grid-item col-md-3 col-sm-6 col-6">
+        <div class="card border-0 shadow-sm bg-white">
+            <div>
+    <img data-src="/assets/images/photos/portrait.jpg" class="lazy w-100 rounded-xl" src="/assets/images/empty_300x200.png" />
+</div>
+
+
+        </div>
+    </div>
+    
+</div>
+
+    </div>
+    <footer class="footer mt-3">
+  <!-- <div class="container-xl"> -->
+  <div class="container pl-4" style="max-width: 1700px;">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
         <div class="row my-3">
-            <div class="col-6">
-                <div class="text-muted">
-                    <i>Last updated: Jan 2026</i>
-                </div>
+          <div class="col-12">
+            <div class="text-muted">
+              <small>
+                &copy; 2025 Shiwon Kim. Site powered by <a href="https://github.com/luost26/academic-homepage" target="_blank"><i class="fas fa-pencil-ruler"></i> academic-homepage</a>.<br>
+                Last updated: Feb 2026
+              </small>
             </div>
-            <div class="col-6">
-                <div class="text-right text-muted">
-                    <a href="https://github.com/luost26/academic-homepage" target="_blank"><i class="fas fa-pencil-ruler"></i> academic-homepage</a>
-                </div>
+          </div>
+          <!-- <div class="col-6">
+            <div class="text-right text-muted">
+              <a href="https://github.com/luost26/academic-homepage" target="_blank"><i class="fas fa-pencil-ruler"></i> academic-homepage</a>
             </div>
+          </div> -->
         </div>
+      </div>
     </div>
+  </div>
 </footer>
 
 
@@ -243,7 +432,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/github-buttons/2.14.2/buttons.min.js" integrity="sha512-OYwZx04hKFeFNYrWxIyo3atgGpb+cxU0ENWBZs72X7T9U+NoHPM1ftUn/Mfw7dRDXrqWA6M1wBg6z6fGE32aeA==" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+              delimiters: [
+                  {left: '$$', right: '$$', display: true},
+                  {left: '$', right: '$', display: false}
+              ],
+              throwOnError : false
+            });
+        });
+    </script>
     <script src="/assets/js/common.js"></script>
     <script src="/assets/js/bubble_visual_hash.js"></script>
+    <script src="/assets/js/semantic_scholar_citation_count.js"></script>
 </body>
 </html>

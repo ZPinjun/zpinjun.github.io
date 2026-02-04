@@ -1,14 +1,61 @@
 @charset "utf-8";
 body {
-    font-family: "Lato", sans-serif;
+    /* font-family: "Lato", sans-serif; */
+    /* font-family: "Source Sans 3", sans-serif; */
+    /* font-family: "Alan Sans", sans-serif; */
+    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
-    padding-top: 5.0rem;
+    padding-top: 0rem;
 }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 700;
 }
+
+.text-em {
+    color: #800020;
+    font-weight: 500;
+}
+
+.text-hl {
+    /* background-color: #fffcab; */
+    font-weight: 500;
+    /* padding: 0.1em 0.2em; */
+    /* border-radius: 4px; */
+
+    background-color: transparent;
+    border-radius: 0;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    /* text-underline-offset: -2px; */
+    text-decoration-color: #ffd500;
+    text-decoration-skip-ink: none;
+    white-space: nowrap;
+}
+
+.card {
+    border-radius: 0.8rem!important;
+}
+
+.card-img-overlay {
+    border-radius: 0.8rem!important;
+}
+
+.rounded-xl {
+    border-radius: 0.8rem!important;
+}
+
+.rounded-xl-bottom {
+    border-bottom-right-radius: 0.8rem !important;
+    border-bottom-left-radius: 0.8rem !important;
+}
+
+.rounded-xl-top {
+    border-top-left-radius: 0.8rem !important;
+    border-top-right-radius: 0.8rem !important;
+}
+
 
 .text-profile-position {
     font-weight: 400;
@@ -64,6 +111,10 @@ div.lazy {
 }
 
 .email-text {
-    font-family: Courier, monospace;
+    font-family: "Courier Prime", monospace;
 }
 
+.profile-name {
+  font-size: 1.5rem;    
+  line-height: 1.25;
+}
