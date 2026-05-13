@@ -118,3 +118,16 @@ div.lazy {
   font-size: 1.5rem;    
   line-height: 1.25;
 }
+
+.visitor-map-embed {
+    min-height: 120px;
+}
+
+.visitor-map-card iframe,
+.visitor-map-embed img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    display: block;
+}
