@@ -131,3 +131,20 @@ div.lazy {
     border: 0;
     display: block;
 }
+
+.news-list {
+    --news-gap: 0.75rem;
+}
+
+.news-year {
+    padding: var(--news-gap) 0;
+}
+
+.news-year-label {
+    margin-right: 1rem;
+    flex: 0 0 auto;
+}
+
+.news-item + .news-item {
+    margin-top: var(--news-gap);
+}
