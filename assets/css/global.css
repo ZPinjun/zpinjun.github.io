@@ -219,6 +219,10 @@ img { max-width: 100%; height: auto; }
 }
 
 @media (max-width: 600px) {
+    .profile { grid-template-columns: minmax(0, 1fr); gap: 20px; text-align: center; }
+    .profile-portrait { width: 160px; height: 200px; margin-inline: auto; }
+    .profile-details { min-width: 0; }
+    .profile-social-links { justify-content: center; }
     .publication-item--illustrated { grid-template-columns: 94px minmax(0, 1fr); gap: 17px; }
     .publication-thumbnail img { width: 94px; height: 100px; }
     .career-entry { grid-template-columns: minmax(0, 1fr); gap: 4px; margin-bottom: 20px; }
@@ -234,8 +238,6 @@ img { max-width: 100%; height: auto; }
     body { font-size: 15px; }
     .site-shell { width: calc(100% - 36px); }
     .site-sidebar { margin-bottom: 26px; }
-    .profile { grid-template-columns: 105px minmax(0, 1fr); gap: 20px; align-items: start; }
-    .profile-portrait { width: 105px; height: 138px; }
     .profile-name { margin: 0 0 9px; font-size: 26px; letter-spacing: -0.7px; }
     .profile-positions { font-size: 13px; line-height: 1.6; }
     .profile-email { font-size: 12px; margin-top: 9px; }
