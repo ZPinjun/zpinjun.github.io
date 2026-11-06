@@ -66,3 +66,4 @@ if (uncachedSemanticScholarIds.length > 0) {
 } else {
     showSemanticScholarCitationCount();
 }
+

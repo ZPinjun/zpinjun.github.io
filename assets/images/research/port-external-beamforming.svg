@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" role="img" aria-labelledby="title desc">
+  <title id="title">Port-external beamforming within a beam-management loop</title>
+  <desc id="desc">Beam training produces measurements and limited feedback. Learning-based control uses this information to configure antenna radiation for subsequent transmissions.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 9 5 0 9" fill="none" stroke="#8b2028" stroke-width="1.4"/></marker></defs>
+  <rect width="720" height="380" fill="white"/>
+  <g fill="#faf9f7" stroke="#d5d1ca" stroke-width="1.5">
+    <rect x="36" y="38" width="276" height="108" rx="3"/>
+    <rect x="408" y="38" width="276" height="108" rx="3"/>
+    <rect x="408" y="230" width="276" height="108" rx="3"/>
+    <rect x="36" y="230" width="276" height="108" rx="3"/>
+  </g>
+  <g fill="none" stroke="#8b2028" stroke-width="1.8" marker-end="url(#arrow)">
+    <path d="M312 92H399"/>
+    <path d="M546 146V220"/>
+    <path d="M408 284H322"/>
+    <path d="M174 230V156"/>
+  </g>
+  <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle" fill="#282828">
+    <text x="174" y="84" font-size="23">Beam training</text>
+    <text x="174" y="113" font-size="16" fill="#666">Probe the wireless link</text>
+    <text x="546" y="84" font-size="23">Limited feedback</text>
+    <text x="546" y="113" font-size="16" fill="#666">Measurements and reports</text>
+    <text x="546" y="276" font-size="23">Learning &amp; control</text>
+    <text x="546" y="305" font-size="16" fill="#666">Infer useful configurations</text>
+    <text x="174" y="276" font-size="23">Radiation control</text>
+    <text x="174" y="305" font-size="16" fill="#666">Adapt the antenna domain</text>
+    <text x="360" y="191" font-size="15" fill="#777">Protocol-constrained operation</text>
+  </g>
+</svg>

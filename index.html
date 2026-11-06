@@ -1,916 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Template: https://github.com/luost26/academic-homepage -->
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title></title>
-    <!-- <link rel="icon" type="image/svg" href="/assets/images/pointer_xs.svg"> -->
-    
-    
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pinjun ZHENG</title>
+<meta name="description" content="Pinjun ZHENG — NSERC Postdoctoral Fellow at the University of British Columbia, Okanagan. Research in wireless communications, signal processing, and radio localization.">
+<meta name="theme-color" content="#9b000a">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Zilla+Slab+Highlight:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/global.css?v=1790907672">
 
-    <style>
-        body {
-          font-size: 0.9rem;
-        }
-        /* h1, h2, h3, h4, h5, h6 {
-          font-size: inherit;
-        } */
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/css/global.css?v=1793948304">
 
-        a {
-        /* color: #21356a; */
-        color: #0056b3;
-        text-decoration: none; /* no underline */
-        }
-
-        a:hover {
-        color: #ff6f61;
-        text-decoration: underline;
-        }
-
-        /* .bd-callout {
-            background-color: #fff8dc;
-            border-left: 4px solid #f0ad4e;
-            padding: 1em 1.2em;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            border-radius: 6px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-        } */
-
-        .bd-callout {
-            margin-top: 1.25rem;
-            margin-bottom: 1.25rem;
-            padding: 1.25rem;
-            border-width: 1px 1px 1px 0.25rem;
-            border-style: solid;
-            border-color: rgb(238, 238, 238);
-            border-image: initial;
-            border-radius: 0.25rem;
-        }
-
-        .bd-callout-info {
-            /* border-left-color: rgb(91, 192, 222); */
-            border-left-color: #ff6f61;
-        }
-    </style>
 </head>
-<body class="bg-light" >
-    <style>
-  /* ===== Navbar with Subtle Background Image ===== */
-
-  .navbar-academic {
-    position: relative;
-    background-color: #f2f4f8;
-    border-bottom: 1px solid #d8dde6;
-    font-size: 1.5rem;
-    overflow: hidden;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  /* background layer */
-  .navbar-academic::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("/assets/images/photos/navbar-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    opacity: 0.3;   
-    z-index: 0;
-  }
-
-  /* front layer */
-  .navbar-academic > .container {
-    position: relative;
-    z-index: 1;
-  }
-
-  .navbar-academic .navbar-brand {
-    color: #1f2a44;
-    font-family: "Libre Baskerville", "Times New Roman", serif;
-    font-weight: 700;
-    font-size: 2.5rem;
-    letter-spacing: 0.03em;
-  }
-
-  .navbar-academic .nav-link {
-    color: #3b455f;
-    margin-left: 1rem;
-  }
-
-  .navbar-academic .nav-link:hover,
-  .navbar-academic .nav-item.active .nav-link {
-    color: #004a99;
-    font-weight: 600;
-  }
-</style>
-
-<nav class="navbar navbar-expand-sm navbar-academic fixed-top shadow-sm">
-  <div class="container" style="max-width: 1400px;">
-    <a class="navbar-brand" href="/">
-      
-    </a>
-
-    <button class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+<body >
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="site-shell">
+    <header class="site-sidebar">
+  <div class="mobile-nav-header">
+    <a class="mobile-site-name" href="/">Pinjun ZHENG</a>
+    <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation">
+      Menu <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14"/></svg>
     </button>
+  </div>
+  <nav class="site-navigation" id="site-navigation" aria-label="Main navigation">
+    
+    <a href="/" aria-current="page">Home</a>
+    
+    <a href="/experiences">Experiences</a>
+    
+    <a href="/research">Research</a>
+    
+    <a href="/talks">Talks</a>
+    
+    <a href="/service">Service</a>
+    
+  </nav>
+</header>
 
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
+    <div class="site-content">
+      <main class="site-main home-page" id="main-content">
+        <section class="profile" aria-label="Profile and contact">
+  
+  <img class="profile-portrait" src="/assets/images/photos/portrait.jpg" alt="Portrait of Pinjun ZHENG" title="" width="160" height="200" fetchpriority="high">
+  
+  <div class="profile-details">
+    <h1 class="profile-name">Pinjun ZHENG</h1>
+    <div class="profile-positions">
+      <div>NSERC Postdoctoral Fellow</div><div><a href="https://ok.ubc.ca" target="_blank">The University of British Columbia, Kelowna, BC, Canada</a></div>
+    </div>
+    <a class="profile-email" href="mailto:%70%69%6E%6A%75%6E.%7A%68%65%6E%67@%75%62%63.%63%61">pinjun.zheng (at) ubc.ca</a>
+    <div class="profile-links profile-social-links">
+      
         
-        <li class="nav-item active">
-          <a class="nav-link" href="/">
-            Home
-          </a>
-        </li>
-        
-        <li class="nav-item ">
-          <a class="nav-link" href="/research">
-            Research
-          </a>
-        </li>
-        
-      </ul>
+      <a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=G30RSRQAAAAJ" aria-label="Google Scholar" title="Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i></a>
+      
+      <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/pinjun-zheng-8205a4290" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+      <a target="_blank" rel="noopener noreferrer" href="https://ieeexplore.ieee.org/author/37086489328" aria-label="IEEE Xplore" title="IEEE Xplore"><i class="ai ai-ieee" aria-hidden="true"></i></a>
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/ZPinjun" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+      
+      
+      
     </div>
   </div>
-</nav>
-    <!-- <div class="container-fluid"> -->
-    <div class="container" style="max-width: 1700px;">
-        <div class="row justify-content-center">
-  <div class="col-12 col-lg-3">
-    <div class="row">
-    <div class="col">
-        <div class="card border-0 mt-3 shadow-sm bg-white">
-            <div class="card-body pt-5">
-                <div class="row">
-                    <div class="col">
-                        
-                        <!-- When the screen is wider than md, float the portrait on the right -->
-                        <!-- <div class="figure float-right ml-4 mb-4 d-none d-md-block"> -->
-                        <div class="text-center mb-3">
-                            <img 
-                                src="/assets/images/photos/portrait.jpg" 
-                                class="figure-img img-fluid img-thumbnail" 
-                                style="height: 300px;"
-                                data-toggle="tooltip" 
-                                data-placement="top"
-                                title="Photo taken by my friends Xiaodong, Yidan, and Ying at KAUST!">
-                        </div>
-                        
+</section>
 
-                        <div class="d-flex justify-content-center w-100 text-center mb-1">
-                            <div class="h2 profile-name">
-                                <!-- <span style="font-weight: 600;">Pinjun Zheng</span> <small></small> -->
-                                Pinjun Zheng <small></small>
-                            </div>
-                            <!-- 
-                            <div class="ml-auto d-md-none">
-                                <a target="_blank" href="/assets/images/photos/portrait.jpg">
-                                    <img src="/assets/images/photos/portrait.jpg" class="rounded-circle" style="height: 48px;" alt="Portrait">
-                                </a>
-                            </div>
-                             -->
-                        </div>
-                        <div class="text-profile-position text-center mb-3">
-                            
-                            <img src="/assets/images/badges/logo_UBC.png" alt="Logo" class="inline-badge"/>
-                            NSERC Postdoctoral Fellow<br/>
-                            
-                            
-                            <a href="https://ok.ubc.ca" target="_blank">The University of British Columbia, Okanagan</a><br/>
-                            
-                            <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; font-weight: 100">pinjun.zheng(at)ubc.ca</span>
-                        </div>
-                        <!-- 
-                            <a target="_blank" href="https://zpinjun.github.io/uploads/CV_PinjunZheng.pdf"><i class="fas fa-file-alt"></i> Curriculum Vitae</a> <br/>
-                         -->
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col text-center" style="font-size: 1.2rem">
-                        <!-- <a class="pr-3 no-break" href="mailto:%70%69%6E%6A%75%6E.%7A%68%65%6E%67@%75%62%63.%63%61">
-                            <i class="fas fa-at"></i> <span class="email-text">pinjun.zheng(at)ubc.ca</span>
-                        </a> -->
-
-                        
-                            <a class="pr-3 no-break" target="_blank" href="https://zpinjun.github.io/uploads/CV_PinjunZheng.pdf">
-                                <i class="fas fa-file-alt"></i>
-                            </a>
-                        
-
-                        <a class="pr-3 no-break" target="_blank" href="https://scholar.google.com/citations?user=G30RSRQAAAAJ">
-                            <i class="fab fa-google-scholar"></i>
-                        </a>
-                        
-                        
-                        
-                        <a class="pr-3 no-break" target="_blank" href="https://github.com/ZPinjun">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        
-
-                        
-
-                        
-
-                        
-                        <a class="no-break" target="_blank" href="https://www.linkedin.com/in/pinjun-zheng-8205a4290">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        
-
-                        
-                    </div>
-                </div>
-            </div>
-        </div>        
-    </div>
-</div>
-
-
-
-
-    
-      <div class="mt-3 mb-0 bg-white shadow-sm rounded-xl">
-    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-graduation-cap"></i><span style="margin-left: 0.3em;">Education</span></h6>
-    <div class="px-3 pt-3 pb-2">
-        
-            
-            <li class="media mb-2">
-                <img src="/assets/images/badges/logo_KAUST.png" alt="King Abdullah University of Science and Technology" style="width: 16px; margin-top: 3px" class="mr-1">
-                <div class="media-body">
-                    <div>King Abdullah University of Science and Technology</div>
-                    <div class="small">
-                        <em>Sep. 2021 - Nov. 2024</em>
-                    </div>
-                    <div class="small d-flex">
-                        <div>Ph.D. in Electrical and Computer Engineering</div>
-                        <div class="mt-auto ml-auto no-break"><em></em></div>
-                    </div>
-                    <div class="small"></div>
-                </div>
-            </li>
-            
-            <li class="media mb-2">
-                <img src="/assets/images/badges/logo_HIT.png" alt="Harbin Institute of Technology" style="width: 16px; margin-top: 3px" class="mr-1">
-                <div class="media-body">
-                    <div>Harbin Institute of Technology</div>
-                    <div class="small">
-                        <em>Sep. 2019 - Jun. 2021</em>
-                    </div>
-                    <div class="small d-flex">
-                        <div>M.S. in Instrument Science and Technology</div>
-                        <div class="mt-auto ml-auto no-break"><em></em></div>
-                    </div>
-                    <div class="small"></div>
-                </div>
-            </li>
-            
-            <li class="media mb-2">
-                <img src="/assets/images/badges/logo_HIT.png" alt="Harbin Institute of Technology" style="width: 16px; margin-top: 3px" class="mr-1">
-                <div class="media-body">
-                    <div>Harbin Institute of Technology</div>
-                    <div class="small">
-                        <em>Sep. 2015 - Jun. 2019</em>
-                    </div>
-                    <div class="small d-flex">
-                        <div>B.S. in Measurement, Control Technique and Instruments</div>
-                        <div class="mt-auto ml-auto no-break"><em></em></div>
-                    </div>
-                    <div class="small"></div>
-                </div>
-            </li>
-            
-        
-    </div>
-</div>
-
-    
-
-    
-      <div class="mt-3 mb-0 bg-white shadow-sm rounded-xl">
-    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-map-marker-alt"></i><span style="margin-left: 0.3em;">Experience</span></h6>
-    <div class="px-3 pt-3 pb-2">
-        
-            
-            <li class="media mb-2">
-                <img src="/assets/images/badges/logo_UBC.png" alt="The University of British Columbia" style="width: 16px; margin-top: 3px" class="mr-1">
-                <div class="media-body">
-                    <div>The University of British Columbia</div>
-                    <div class="small">
-                        <em>Dec. 2024 - Present</em>
-                    </div>
-                    <div class="small d-flex">
-                        <div>Postdoctoral Research Fellow</div>
-                        <div class="mt-auto ml-auto no-break"><em>Kelowna, BC, Canada</em></div>
-                    </div>
-                    <div class="small"></div>
-                </div>
-            </li>
-            
-            <li class="media mb-2">
-                <img src="/assets/images/badges/logo_UofT.svg" alt="University of Toronto" style="width: 16px; margin-top: 3px" class="mr-1">
-                <div class="media-body">
-                    <div>University of Toronto</div>
-                    <div class="small">
-                        <em>Jul. 2025 - Aug. 2025</em>
-                    </div>
-                    <div class="small d-flex">
-                        <div>Visiting Researcher</div>
-                        <div class="mt-auto ml-auto no-break"><em>Toronto, ON, Canada</em></div>
-                    </div>
-                    <div class="small"></div>
-                </div>
-            </li>
-            
-        
-    </div>
-</div>
-
-    
-
-    
-      <div class="mt-3 mb-0 bg-white shadow-sm rounded-xl visitor-map-card">
-    <h6 class="p-3 mb-0 border-bottom border-gray">
-        <i class="fas fa-globe-americas"></i><span style="margin-left: 0.3em;">Visitor Map</span>
-    </h6>
-    <div class="px-3 pt-3 pb-3">
-        
-            <div class="visitor-map-embed">
-                <a href="https://info.flagcounter.com/P3pe" target="_blank" rel="noopener noreferrer"><img src="https://s01.flagcounter.com/map/P3pe/size_l/txt_333333/border_E5E7EB/pageviews_1/viewers_3/flags_0/" alt="Visitor map" border="0"></a>
-            </div>
-        
-    </div>
-</div>
-
-    
-
-    
+<section class="academic-section" aria-label="Biography">
+  <div class="text-profile-bio">
+    <p>
+  I am currently a postdoctoral fellow at the School of Engineering, The University of British Columbia (UBC), Kelowna, BC, Canada, 
+  where I am working with Prof. <a href="https://engineering.ok.ubc.ca/about/contact/anas-chaaban/" target="_blank">Anas Chaaban</a> and Prof. <a href="https://engineering.ok.ubc.ca/about/contact/jahangir-hossain/" target="_blank">Md. Jahangir Hossain</a>. 
+  Previously, I earned my Ph.D. in the Electrical and Computer Engineering Program at the Computer, Electrical, and Mathematical Sciences and Engineering (CEMSE) Division, King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia, under the supervision of Prof. <a href="https://cemse.kaust.edu.sa/isl/people/person/tareq-al-naffouri" target="_blank">Tareq Al-Naffouri</a>. 
+  Prior to that, I received the B.S. and M.S. degrees from Harbin Institute of Technology (HIT), Harbin, China.
+  I was a recipient of the Canada Postdoctoral Research Award (CPRA) from the Natural Sciences and Engineering Research Council of Canada (NSERC) in 2026.
+</p>
   </div>
+</section>
 
-  <div class="col-12 col-lg-7">
-    <div class="row">
-    <div class="col">
-        <div class="card border-0 mt-3 shadow-sm bg-white">
-            <div class="card-body p-5">
-                <div class="row">
-                    <div class="col">
-                        <!-- When the screen is wider than md, float the portrait on the right -->
-                        <!-- 
-                        <div class="figure float-right ml-4 mb-4 d-none d-md-block">
-                            <img 
-                                src="/assets/images/photos/portrait.jpg" 
-                                class="figure-img img-fluid img-thumbnail" 
-                                style="height: 200px;"
-                                data-toggle="tooltip" 
-                                data-placement="top" 
-                                title="Photo taken by my friends Xiaodong, Yidan, and Ying at KAUST!">
-                        </div>
-                         -->
-
-                        <div class="d-flex">
-                            <div class="h3">
-                                About Me
-                            </div>
-                        </div>
-                        <div class="text-profile-bio mt-3" >
-                            <p>
-  I am currently a postdoctoral fellow at the School of Engineering, The University of British Columbia, Kelowna, BC, Canada, where I am working with Prof. <a href="https://engineering.ok.ubc.ca/about/contact/anas-chaaban/" target="_blank">Anas Chaaban</a> and Prof. <a href="https://engineering.ok.ubc.ca/about/contact/jahangir-hossain/" target="_blank">Md. Jahangir Hossain</a>. Previously, I earned my Ph.D. in the Electrical and Computer Engineering Program at the Computer, Electrical, and Mathematical Sciences and Engineering (CEMSE) Division, King Abdullah University of Science and Technology (KAUST), Thuwal, KSA, under the supervision of Prof. <a href="https://cemse.kaust.edu.sa/isl/people/person/tareq-al-naffouri" target="_blank">Tareq Al-Naffouri</a>. Prior to that, I received the B.S. and M.S. degrees from the Harbin Institute of Technology (HIT), China. My research interests lie in signal processing, deep learning, wireless communications, and radio localization.
-</p> <div class="bd-callout bd-callout-info bg-white shadow-sm">
-  <i class="fas fa-info-circle" style="margin-right: 0.2em;"></i> 
-  I am always interested in collaborating with talented researchers. If you have any good ideas within my expertise, please feel free to drop me an email to initiate a discussion.
-</div>
-                        </div>
-                        <!-- 
-                            <a target="_blank" href="https://zpinjun.github.io/uploads/CV_PinjunZheng.pdf"><i class="fas fa-file-alt"></i> Curriculum Vitae</a> <br/>
-                         -->
-                    </div>
-                </div>
-            </div>
-        </div>        
-    </div>
-</div>
-
-
-    <div id="ghpages-domain-debug-message" class="row mt-3 d-none">
-    <div class="col">
-        <div class="alert alert-warning my-0" role="alert">
-            <h5><i class="fas fa-exclamation-triangle"></i> Warning</h5>
-            <strong>Problem:</strong>
-            The current name of your GitHub Pages repository ("<code class="repo-name-text"></code>") does not match the recommended repository name for your site ("<code class="domain-name-text"></code>").
-            <br>
-            <strong>Solution:</strong> Please consider renaming the repository to "<code class="domain-name-text"></code>", so that your site can be accessed directly at "<code>http://<span class="domain-name-text"></span></code>".
-            However, if the current repository name is intended, you can ignore this message by removing "<code>{% include widgets/debug_repo_name.html %}</code>" in <code>index.html</code>.
-        </div>
-    </div>
-</div>
-
-<script>
-striped_pathname = location.pathname.replace(/\/+$/, "");
-document.querySelectorAll(".repo-name-text").forEach(function(element){
-    element.textContent = striped_pathname.replace("/", "");
-});
-document.querySelectorAll(".domain-name-text").forEach(function(element){
-    element.textContent = location.hostname;
-});
-
-if (location.hostname.search("github.io") != -1 && striped_pathname != ""){
-    document.getElementById("ghpages-domain-debug-message").classList.remove('d-none');
-}
-</script>
-
+<section class="academic-section" aria-labelledby="research-interests-title">
+  <h2 class="section-title" id="research-interests-title"><span class="heading-text">Research Interests</span></h2>
+  <ul class="research-list">
     
-    <div id="url-debug-message" class="row mt-3 d-none">
-    <div class="col">
-        <div class="alert alert-warning my-0" role="alert">
-            <h5><i class="fas fa-exclamation-triangle"></i> Action required</h5>
-            <strong>Problem:</strong>
-            The current root path of this site is "<code class="root-path-text"></code>",
-            which does not match the <code>baseurl</code> ("<code></code>") configured in <code>_config.yml</code>.
-            <br>
-
-            <strong>Solution:</strong>
-            Please set the <code>baseurl</code> in <code>_config.yml</code> to "<code class="root-path-text"></code>".
-        </div>
-    </div>
-</div>
-
-<script>
-striped_pathname = location.pathname.replace(/\/+$/, "");
-if(striped_pathname != ""){
-    document.getElementById("url-debug-message").classList.remove('d-none');
-}
-document.querySelectorAll(".root-path-text").forEach(function(element){
-    element.textContent = striped_pathname;
-});
-</script>
-
-
+    <li>MIMO communications and localization</li>
     
-      
-      
-        <div class="my-3 bg-white shadow-sm rounded-xl">
-    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-rss"></i><span style="margin-left: 0.3em;">News</span></h6>
-    <div class="news-list px-3">
-        
-        <div class="media news-year">
-            <div class="news-year-label text-muted">2026</div>
-            <div class="media-body">
-                
-                <div class="news-item d-flex">
-                    <div>I am attending the 2026 IEEE/CIC International Conference on Communications in China (ICCC) in Wuhan, China. Together with my colleagues Shanpu Shen, Hongyu Li, and Rang Liu, we delivered a half-day tutorial titled “𝗔𝗱𝘃𝗮𝗻𝗰𝗲𝗱 𝗖𝗼𝗺𝗺𝘂𝗻𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀 𝗮𝗻𝗱 𝗦𝗶𝗴𝗻𝗮𝗹 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 𝗳𝗼𝗿 𝗥𝗲𝗰𝗼𝗻𝗳𝗶𝗴𝘂𝗿𝗮𝗯𝗹𝗲 𝗪𝗶𝗿𝗲𝗹𝗲𝘀𝘀 𝗦𝘆𝘀𝘁𝗲𝗺𝘀.” <a href="https://www.linkedin.com/feed/update/urn:li:activity:7493138736235335680/" target="_blank">Read more <i class="fas fa-angle-double-right"></i></a></div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>Aug 07</i></div>
-                </div>
-                
-                <div class="news-item d-flex">
-                    <div>I am visiting University of Southampton's 𝘊𝘦𝘯𝘵𝘳𝘦 𝘧𝘰𝘳 𝘐𝘰𝘛 𝘢𝘯𝘥 𝘗𝘦𝘳𝘷𝘢𝘴𝘪𝘷𝘦 𝘚𝘺𝘴𝘵𝘦𝘮𝘴 and University of Surrey's 5𝘎/6𝘎 𝘐𝘯𝘯𝘰𝘷𝘢𝘵𝘪𝘰𝘯 𝘊𝘦𝘯𝘵𝘳𝘦, presenting a talk titled “𝗥𝗲𝗰𝗼𝗻𝗳𝗶𝗴𝘂𝗿𝗮𝗯𝗹𝗲 𝗔𝗻𝘁𝗲𝗻𝗻𝗮𝘀 𝗳𝗼𝗿 𝗪𝗶𝗿𝗲𝗹𝗲𝘀𝘀 𝗖𝗼𝗺𝗺𝘂𝗻𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀: 𝗛𝗮𝗿𝗱𝘄𝗮𝗿𝗲 𝗣𝗿𝗼𝘁𝗼𝘁𝘆𝗽𝗶𝗻𝗴, 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲 𝗗𝗲𝘀𝗶𝗴𝗻, 𝗮𝗻𝗱 𝗦𝗶𝗴𝗻𝗮𝗹 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴.” <a href="https://www.linkedin.com/posts/profakcelik_ciot-6g-isac-ugcPost-7467492727614582785-VerO/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEaRBZgBd5eeiufg9JLXWuvTxbss0mR5RVs" target="_blank">Read more <i class="fas fa-angle-double-right"></i></a></div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>May 03</i></div>
-                </div>
-                
-                <div class="news-item d-flex">
-                    <div>I am attending IEEE ICC 2026 in Glasgow, Scotland, UK. We are presenting two interactive papers and delivering a half-day tutorial titled “𝟲𝗚 𝗧𝗡-𝗡𝗧𝗡 𝗟𝗼𝗰𝗮𝗹𝗶𝘇𝗮𝘁𝗶𝗼𝗻: 𝗦𝘆𝘀𝘁𝗲𝗺 𝗙𝘂𝗻𝗱𝗮𝗺𝗲𝗻𝘁𝗮𝗹𝘀, 𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹 𝗘𝗻𝗮𝗯𝗹𝗲𝗿𝘀, 𝗮𝗻𝗱 𝗔𝗹𝗴𝗼𝗿𝗶𝘁𝗵𝗺𝘀”. <a href="https://www.linkedin.com/posts/pinjun-zheng-8205a4290_ieeeicc2026-wirelesscommunications-ugcPost-7466055511289827328-B670/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEaRBZgBd5eeiufg9JLXWuvTxbss0mR5RVs" target="_blank">Read more <i class="fas fa-angle-double-right"></i></a></div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>Apr 24</i></div>
-                </div>
-                
-                <div class="news-item d-flex">
-                    <div>I have joined the editorial board of IEEE Wireless Communications Letters as an Associate Editor. </div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>Mar 01</i></div>
-                </div>
-                
-                <div class="news-item d-flex">
-                    <div>I won the Canada Postdoctoral Research Award (CPRA) from the Natural Sciences and Engineering Research Council of Canada (NSERC).</div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>Feb 24</i></div>
-                </div>
-                
-            </div>
-        </div>
-        
-        <div class="media news-year border-top border-gray">
-            <div class="news-year-label text-muted">2025</div>
-            <div class="media-body">
-                
-                <div class="news-item d-flex">
-                    <div>One paper has been accepted by the IEEE Journal on Selected Areas in Communications.   <a href="https://www.linkedin.com/posts/pinjun-zheng-8205a4290_ieee-jsac-fluidantenna-activity-7387968115684319232-jHp2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEaRBZgBd5eeiufg9JLXWuvTxbss0mR5RVs" target="_blank">Read more <i class="fas fa-angle-double-right"></i></a></div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>Oct 28</i></div>
-                </div>
-                
-                <div class="news-item d-flex">
-                    <div>One paper has been accepted by the IEEE Transactions on Wireless Communications.   <a href="https://www.linkedin.com/posts/pinjun-zheng-8205a4290_ris-mutualcoupling-mimo-activity-7376301209273466880-KPnB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEaRBZgBd5eeiufg9JLXWuvTxbss0mR5RVs" target="_blank">Read more <i class="fas fa-angle-double-right"></i></a></div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>Sep 08</i></div>
-                </div>
-                
-                <div class="news-item d-flex">
-                    <div>I am visiting the University of Toronto, Canada, working with Prof. <a href="https://www.comm.utoronto.ca/~weiyu/" target="_blank">Wei Yu</a> for a one-month stay.</div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>Jul 01</i></div>
-                </div>
-                
-            </div>
-        </div>
-        
-        <div class="media news-year border-top border-gray">
-            <div class="news-year-label text-muted">2024</div>
-            <div class="media-body">
-                
-                <div class="news-item d-flex">
-                    <div>Start my work as a PDF at UBCO.</div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>Dec 16</i></div>
-                </div>
-                
-                <div class="news-item d-flex">
-                    <div>We were selected as one of the top 10 finalists of the global competition on Non-Terrestrial Networks for 6G (NTNYS’24)! <a href="https://www.linkedin.com/posts/pinjun-zheng-8205a4290_connectingabrtheabrworldabrfromabrtheabrskies-activity-7267541575667220480-s-8K?utm_source=share&utm_medium=member_desktop" target="_blank">Read more <i class="fas fa-angle-double-right"></i></a></div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>Nov 25</i></div>
-                </div>
-                
-            </div>
-        </div>
-        
-    </div>
-</div>
-
-      
+    <li>Statistical signal processing and machine learning</li>
     
-
+    <li>Design, modeling, and experimental validation of novel electromagnetic structures</li>
     
-      
-      
-<div class="mt-3 mb-0 p-0 bg-white shadow-sm rounded-xl">
+  </ul>
+</section>
 
-  <div class="border-bottom border-gray p-3 mb-0 d-flex justify-content-between align-items-center">
-    <div>
-      <h6 class="mb-0 d-inline">
-        <i class="fas fa-search"></i><span style="margin-left: 0.3em;">Research Highlights</span>
-        <!-- <a href="/research">(view all <i class="fas fa-angle-double-right"></i>)</a> -->
-      </h6>
-    </div>
-
-    <div class="text-right">
-      <small style="font-size: 0.75em;">
-        * Equal contribution, <sup>†</sup> Corresponding author
-      </small>
-    </div>
-  </div>
 
   
-    <style>
-  .tag-badge {
-    display: inline-block;
-    padding: 0.35em 0.75em;
-    font-size: 0.7rem;
-    border-radius: 999px;
-    margin-right: 0.5em;
-    margin-bottom: 0.4em;
-    background-color: #f8f9fa;
-    color: black;
-    /* color: #343a40; */
-  }
 
-  .tag-badge-bio {
-    display: inline-block;
-    padding: 0.3em 0.75em;
-    font-size: 0.7rem;
-    font-weight: 500;
-    border-radius: 999px;
-    margin-right: 0.5em;
-    margin-bottom: 0.4em;
-    background-color: #ff796d;
-    color: #f8f9fa;
-    /* color: #343a40; */
-  }
-
-  .tag-bio {
-    color: #ff6f61;
-    font-weight: 500;
-  }
-
-  .award-badge {
-    display: inline-block;
-    padding: 0.35em 0.75em;
-    font-size: 0.7rem;
-    border-radius: 999px;
-    margin-right: 0.5em;
-    margin-bottom: 0.4em;
-    background-color: #FAFAD2;
-    color: #343a40;
-  }
-</style>
-
-
-<div class="d-none d-md-block">
-    <div class="row no-gutters border-bottom border-gray">
-        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3 d-flex align-items-center"><img data-src="/assets/images/covers/2026J2.png" alt="Fast Tri-Hybrid Beamforming via Deep Unfolding" class="lazy w-100 rounded-sm" src="/assets/images/empty_300x200.png"></div>
-        <div class="col-md-9 col-xl-10 p-3 pl-md-0">
-            <h6 class="mt-0 mb-1 font-weight-normal">Fast Tri-Hybrid Beamforming via Deep Unfolding</h6>
-            <p class="mt-0 mb-0 small"><span class="text-body">
-            <b>Pinjun Zheng</b><sup>†</sup>, </span><span class="text-body">
-            Md. Jahangir Hossain, </span><span class="text-body">
-            Anas Chaaban</span><!--
-<mark>(<sup>†</sup> <i> corresponding author</i>)</mark>-->
-</p>
-            <p class="mt-0 mb-0 small"> <i>IEEE Transactions on Signal Processing</i>   <span data-semantic-scholar-id=""></span></p>
-            <p class="mt-0 mb-0 small"> <span class="badge badge-pill badge-publication badge-success">Journal</span></p>
-            <!-- <p class="mt-0 mb-1 small text-muted">This work develops a fast tri-hybrid precoding algorithm based on the deep unfolding approach, tightly integrating model-based principles and data-driven techniques.</p> -->
-
-            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
-                <a data-toggle="collapse" href="#abstract-fast-tri-hybrid-beamforming-via-deep-unfolding" role="button" aria-expanded="false" aria-controls="abstract-fast-tri-hybrid-beamforming-via-deep-unfolding">
-                    [Abstract]
-                </a>
-
-                
-                
-                <a target="_blank" href="https://ieeexplore.ieee.org/document/11717703">[Paper]</a>
-                
-                
-                
-                <a target="_blank" href="https://github.com/ZPinjun/FastTHBF">[Code]</a>
-                
-                
-            </p>
-
-            <!-- Read More Button -->
-            <!-- <p class="mt-1 mb-1 small">
-                <a class="text-primary" data-toggle="collapse" href="#abstract-fast-tri-hybrid-beamforming-via-deep-unfolding" role="button" aria-expanded="false" aria-controls="abstract-fast-tri-hybrid-beamforming-via-deep-unfolding">
-                    Read more
-                </a>
-            </p> -->
-
-            <!-- Collapsible Abstract -->
-            <div class="collapse" id="abstract-fast-tri-hybrid-beamforming-via-deep-unfolding">
-                <p class="small text-muted mb-0">This work develops a fast tri-hybrid precoding algorithm based on the deep unfolding approach, tightly integrating model-based principles and data-driven techniques.</p>
-            </div>
-
-            <!-- TAG BADGES -->
-            <!-- 
-            <p class="mt-0 mb-0 small">
-                
-            </p>
-             -->
-            <!-- Random Color -->
-            
-            <p class="mt-0 mb-0">
-                
-            </p>
-            
-            <!-- 
-            <p class="mt-0 mb-0">
-                
-                
-            </p>
-             -->
-
-        </div>
-    </div>
+<section class="academic-section" aria-labelledby="news-title">
+  <h2 class="section-title" id="news-title"><span class="heading-text">News</span></h2>
+  <div class="news-list">
+    
+    
+<div class="news-item">
+  <time class="news-date" datetime="2026-08-07">Aug 2026</time>
+  <div>I am attending the 2026 IEEE/CIC International Conference on Communications in China (ICCC) in Wuhan, China. Together with my colleagues Shanpu Shen, Hongyu Li, and Rang Liu, we delivered a half-day tutorial titled “<strong>Advanced Communications and Signal Processing for Reconfigurable Wireless Systems.</strong>” <a href="https://www.linkedin.com/feed/update/urn:li:activity:7493138736235335680/" target="_blank">Read more <i class="fas fa-angle-double-right"></i></a></div>
 </div>
 
-<div class="row no-gutters d-md-none border-bottom border-gray   lazy" data-src="/assets/images/covers/2026J2.png">
-    <div class="w-100  " style="background-color: rgba(255,255,255,0.9);">
-        <div class="d-flex align-items-start flex-column py-3 px-4">
-            <div class="mb-auto"></div>
-            <div>
-                <h5 class="mt-0 mb-1 font-weight-normal">Fast Tri-Hybrid Beamforming via Deep Unfolding</h5>
-                <p class="mt-0 mb-0 small"><span class="text-body">
+    
+    
+<div class="news-item">
+  <time class="news-date" datetime="2026-05-03">May 2026</time>
+  <div>I am visiting University of Southampton's <em>Centre for IoT and Pervasive Systems</em> and University of Surrey's <em>5G/6G Innovation Centre</em>, presenting a talk titled “<strong>Reconfigurable Antennas for Wireless Communications: Hardware Prototyping, Architecture Design, and Signal Processing.</strong>” <a href="https://www.linkedin.com/posts/profakcelik_ciot-6g-isac-ugcPost-7467492727614582785-VerO/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEaRBZgBd5eeiufg9JLXWuvTxbss0mR5RVs" target="_blank">Read more <i class="fas fa-angle-double-right"></i></a></div>
+</div>
+
+    
+    
+<div class="news-item">
+  <time class="news-date" datetime="2026-04-24">Apr 2026</time>
+  <div>I am attending IEEE ICC 2026 in Glasgow, Scotland, UK. We are presenting two interactive papers and delivering a half-day tutorial titled “<strong>6G TN-NTN Localization: System Fundamentals, Technical Enablers, and Algorithms</strong>”. <a href="https://www.linkedin.com/posts/pinjun-zheng-8205a4290_ieeeicc2026-wirelesscommunications-ugcPost-7466055511289827328-B670/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEaRBZgBd5eeiufg9JLXWuvTxbss0mR5RVs" target="_blank">Read more <i class="fas fa-angle-double-right"></i></a></div>
+</div>
+
+    
+    
+<div class="news-item">
+  <time class="news-date" datetime="2026-03-01">Mar 2026</time>
+  <div>I have joined the editorial board of IEEE Wireless Communications Letters as an Associate Editor. </div>
+</div>
+
+    
+    
+<div class="news-item">
+  <time class="news-date" datetime="2026-02-24">Feb 2026</time>
+  <div>I won the <strong>Canada Postdoctoral Research Award (CPRA)</strong> from the Natural Sciences and Engineering Research Council of Canada (NSERC).</strong>” <a href="https://engineering.ok.ubc.ca/2026/11/02/dr-pinjun-zheng-receives-canada-postdoctoral-research-award/" target="_blank">Read more <i class="fas fa-angle-double-right"></i></a></div>
+</div>
+
+    
+  </div>
+  
+  <details class="news-archive">
+    <summary>Earlier news</summary>
+    <div class="news-list">
+      
+      
+<div class="news-item">
+  <time class="news-date" datetime="2025-10-28">Oct 2025</time>
+  <div>One paper has been accepted by the IEEE Journal on Selected Areas in Communications.   <a href="https://www.linkedin.com/posts/pinjun-zheng-8205a4290_ieee-jsac-fluidantenna-activity-7387968115684319232-jHp2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEaRBZgBd5eeiufg9JLXWuvTxbss0mR5RVs" target="_blank">Read more <i class="fas fa-angle-double-right"></i></a></div>
+</div>
+
+      
+      
+<div class="news-item">
+  <time class="news-date" datetime="2025-09-08">Sep 2025</time>
+  <div>One paper has been accepted by the IEEE Transactions on Wireless Communications.   <a href="https://www.linkedin.com/posts/pinjun-zheng-8205a4290_ris-mutualcoupling-mimo-activity-7376301209273466880-KPnB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEaRBZgBd5eeiufg9JLXWuvTxbss0mR5RVs" target="_blank">Read more <i class="fas fa-angle-double-right"></i></a></div>
+</div>
+
+      
+      
+<div class="news-item">
+  <time class="news-date" datetime="2025-07-01">Jul 2025</time>
+  <div>I am visiting the University of Toronto, Canada, working with Prof. <a href="https://www.comm.utoronto.ca/~weiyu/" target="_blank">Wei Yu</a> for a one-month stay.</div>
+</div>
+
+      
+      
+<div class="news-item">
+  <time class="news-date" datetime="2024-12-16">Dec 2024</time>
+  <div>Start my PDF position at UBC Okanagan.</div>
+</div>
+
+      
+      
+<div class="news-item">
+  <time class="news-date" datetime="2024-11-25">Nov 2024</time>
+  <div>We were selected as one of the top 10 finalists of the global competition on Non-Terrestrial Networks for 6G (NTNYS’24)! <a href="https://www.linkedin.com/posts/pinjun-zheng-8205a4290_connectingabrtheabrworldabrfromabrtheabrskies-activity-7267541575667220480-s-8K?utm_source=share&utm_medium=member_desktop" target="_blank">Read more <i class="fas fa-angle-double-right"></i></a></div>
+</div>
+
+      
+      
+<div class="news-item">
+  <time class="news-date" datetime="2024-11-06">Nov 2024</time>
+  <div>I have successfully defended my PhD dissertation! <a href="https://www.linkedin.com/posts/information-science-lab_phddefense-congratulations-localization-ugcPost-7260364917805895680-3Whk?utm_source=share&utm_medium=member_desktop" target="_blank">Read more <i class="fas fa-angle-double-right"></i></a></div>
+</div>
+
+      
+      
+<div class="news-item">
+  <time class="news-date" datetime="2024-08-23">Aug 2024</time>
+  <div>One paper has been accepted by the IEEE Transactions on Wireless Communications. <a href="https://www.linkedin.com/posts/pinjun-zheng-8205a4290_ris-mutualcoupling-scatteringparameters-activity-7234914228871000064-o_lM?utm_source=share&utm_medium=member_desktop" target="_blank">Read more <i class="fas fa-angle-double-right"></i></a></div>
+</div>
+
+      
+      
+<div class="news-item">
+  <time class="news-date" datetime="2024-08-16">Aug 2024</time>
+  <div>One paper has been accepted by the IEEE Journal on Selected Areas in Communications.   <a href="https://www.linkedin.com/posts/pinjun-zheng-8205a4290_leosatellite-ris-tracking-activity-7233792458378129409-DH-G?utm_source=share&utm_medium=member_desktop" target="_blank">Read more <i class="fas fa-angle-double-right"></i></a></div>
+</div>
+
+      
+      
+<div class="news-item">
+  <time class="news-date" datetime="2024-04-09">Apr 2024</time>
+  <div>I have accepted a postdoc offer from the University of British Columbia (Okanagan Campus), Canada, and will enroll by the end of this year.</div>
+</div>
+
+      
+      
+<div class="news-item">
+  <time class="news-date" datetime="2021-09-01">Sep 2021</time>
+  <div>Start my Ph.D. at KAUST.</div>
+</div>
+
+      
+    </div>
+  </details>
+  
+</section>
+
+
+
+  
+  <section class="academic-section" aria-labelledby="highlights-title">
+  <h2 class="section-title" id="highlights-title"><span class="heading-text">Selected Publications</span></h2>
+  
+  <p class="publication-directory">For the complete publication record, please visit my <a href="https://scholar.google.com/citations?user=G30RSRQAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar profile</a>.</p>
+  <p class="publication-note">* Equal contribution &nbsp; &dagger; Corresponding author</p>
+  <div class="publication-list">
+    
+      
+<article class="publication-item publication-item--illustrated">
+  
+  <a class="publication-thumbnail" href="/assets/images/covers/2026J2.png" target="_blank" rel="noopener noreferrer" aria-label="Open illustration for Fast Tri-Hybrid Beamforming via Deep Unfolding">
+    <img src="/assets/images/covers/2026J2.png" alt="Research illustration for Fast Tri-Hybrid Beamforming via Deep Unfolding" loading="lazy" width="150" height="120">
+  </a>
+  
+  <div class="publication-content">
+    <h3 class="publication-title">Fast Tri-Hybrid Beamforming via Deep Unfolding</h3>
+    <p class="publication-authors"><span class="text-body">
             <b>Pinjun Zheng</b><sup>†</sup>, </span><span class="text-body">
             Md. Jahangir Hossain, </span><span class="text-body">
-            Anas Chaaban</span><!--
-<mark>(<sup>†</sup> <i> corresponding author</i>)</mark>-->
-</p>
-                <p class="mt-0 mb-0 small"><i>IEEE Transactions on Signal Processing</i>   <span class="badge badge-pill badge-publication badge-success">Journal</span> <span data-semantic-scholar-id=""></span></p>
-                <p class="mt-0 mb-0 small text-muted">This work develops a fast tri-hybrid precoding algorithm based on the deep unfolding approach, tightly integrating model-based principles and data-driven techniques.</p>
-                
-                <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
-                    
-                    
-                    <a target="_blank" href="https://ieeexplore.ieee.org/document/11717703">[Paper]</a>
-                    
-                    
-                    
-                    <a target="_blank" href="https://github.com/ZPinjun/FastTHBF">[Code]</a>
-                    
-                    
-                </p>
-            </div>
-        </div>
+            Anas Chaaban</span></p>
+    <p class="publication-venue"> <i>IEEE Transactions on Signal Processing</i>,  <span class="publication-year">2026</span></p>
+    
+    
+    <div class="publication-actions">
+       <a class="publication-resource-link"
+   href="https://ieeexplore.ieee.org/document/11717703"
+   target="_blank" rel="noopener noreferrer"
+   
+   aria-label="Paper for Fast Tri-Hybrid Beamforming via Deep Unfolding">[Paper]</a> <a class="publication-resource-link"
+   href="https://github.com/ZPinjun/FastTHBF"
+   target="_blank" rel="noopener noreferrer"
+   
+   aria-label="Code for Fast Tri-Hybrid Beamforming via Deep Unfolding">[Code]</a>
+      
     </div>
+    
+  </div>
+</article>
 
-</div>    
+    
+      
+<article class="publication-item publication-item--illustrated">
   
-    <style>
-  .tag-badge {
-    display: inline-block;
-    padding: 0.35em 0.75em;
-    font-size: 0.7rem;
-    border-radius: 999px;
-    margin-right: 0.5em;
-    margin-bottom: 0.4em;
-    background-color: #f8f9fa;
-    color: black;
-    /* color: #343a40; */
-  }
-
-  .tag-badge-bio {
-    display: inline-block;
-    padding: 0.3em 0.75em;
-    font-size: 0.7rem;
-    font-weight: 500;
-    border-radius: 999px;
-    margin-right: 0.5em;
-    margin-bottom: 0.4em;
-    background-color: #ff796d;
-    color: #f8f9fa;
-    /* color: #343a40; */
-  }
-
-  .tag-bio {
-    color: #ff6f61;
-    font-weight: 500;
-  }
-
-  .award-badge {
-    display: inline-block;
-    padding: 0.35em 0.75em;
-    font-size: 0.7rem;
-    border-radius: 999px;
-    margin-right: 0.5em;
-    margin-bottom: 0.4em;
-    background-color: #FAFAD2;
-    color: #343a40;
-  }
-</style>
-
-
-<div class="d-none d-md-block">
-    <div class="row no-gutters border-bottom border-gray">
-        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3 d-flex align-items-center"><img data-src="/assets/images/covers/2025J2.png" alt="Tri-Hybrid Multi-User Precoding Using Pattern-Reconfigurable Antennas: Fundamental Models and Practical Algorithms" class="lazy w-100 rounded-sm" src="/assets/images/empty_300x200.png"></div>
-        <div class="col-md-9 col-xl-10 p-3 pl-md-0">
-            <h6 class="mt-0 mb-1 font-weight-normal">Tri-Hybrid Multi-User Precoding Using Pattern-Reconfigurable Antennas: Fundamental Models and Practical Algorithms</h6>
-            <p class="mt-0 mb-0 small"><span class="text-body">
+  <a class="publication-thumbnail" href="/assets/images/covers/2025J2.png" target="_blank" rel="noopener noreferrer" aria-label="Open illustration for Tri-Hybrid Multi-User Precoding Using Pattern-Reconfigurable Antennas: Fundamental Models and Practical Algorithms">
+    <img src="/assets/images/covers/2025J2.png" alt="Research illustration for Tri-Hybrid Multi-User Precoding Using Pattern-Reconfigurable Antennas: Fundamental Models and Practical Algorithms" loading="lazy" width="150" height="120">
+  </a>
+  
+  <div class="publication-content">
+    <h3 class="publication-title">Tri-Hybrid Multi-User Precoding Using Pattern-Reconfigurable Antennas: Fundamental Models and Practical Algorithms</h3>
+    <p class="publication-authors"><span class="text-body">
             <b>Pinjun Zheng</b><sup>†</sup>, </span><span class="text-body">
             Yuchen Zhang, </span><span class="text-body">
             Tareq Y. Al-Naffouri, </span><span class="text-body">
             Md. Jahangir Hossain, </span><span class="text-body">
-            Anas Chaaban</span><!--
-<mark>(<sup>†</sup> <i> corresponding author</i>)</mark>-->
-</p>
-            <p class="mt-0 mb-0 small"> <i>IEEE Transactions on Communications</i>   <span data-semantic-scholar-id=""></span></p>
-            <p class="mt-0 mb-0 small"> <span class="badge badge-pill badge-publication badge-success">Journal</span></p>
-            <!-- <p class="mt-0 mb-1 small text-muted">In this work, we investigate a tri-hybrid MIMO architecture for multi-user communication that combines digital, analog, and antenna-domain precoding through the use of pattern-reconfigurable antennas. We develop two foundational models to characterize the tri-hybrid MIMO system, propose corresponding precoding algorithms with quadratic complexity, and evaluate system performance using realistic ray-tracing simulations.</p> -->
-
-            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
-                <a data-toggle="collapse" href="#abstract-tri-hybrid-multi-user-precoding-using-pattern-reconfigurable-antennas-fundamental-models-and-practical-algorithms" role="button" aria-expanded="false" aria-controls="abstract-tri-hybrid-multi-user-precoding-using-pattern-reconfigurable-antennas-fundamental-models-and-practical-algorithms">
-                    [Abstract]
-                </a>
-
-                
-                
-                <a target="_blank" href="https://arxiv.org/pdf/2505.08938v3">[Paper]</a>
-                
-                
-                
-                <a target="_blank" href="https://github.com/ZPinjun/Communication/tree/main/TCOM202607_Tri-HybridMIMO">[Code]</a>
-                
-                
-            </p>
-
-            <!-- Read More Button -->
-            <!-- <p class="mt-1 mb-1 small">
-                <a class="text-primary" data-toggle="collapse" href="#abstract-tri-hybrid-multi-user-precoding-using-pattern-reconfigurable-antennas-fundamental-models-and-practical-algorithms" role="button" aria-expanded="false" aria-controls="abstract-tri-hybrid-multi-user-precoding-using-pattern-reconfigurable-antennas-fundamental-models-and-practical-algorithms">
-                    Read more
-                </a>
-            </p> -->
-
-            <!-- Collapsible Abstract -->
-            <div class="collapse" id="abstract-tri-hybrid-multi-user-precoding-using-pattern-reconfigurable-antennas-fundamental-models-and-practical-algorithms">
-                <p class="small text-muted mb-0">In this work, we investigate a tri-hybrid MIMO architecture for multi-user communication that combines digital, analog, and antenna-domain precoding through the use of pattern-reconfigurable antennas. We develop two foundational models to characterize the tri-hybrid MIMO system, propose corresponding precoding algorithms with quadratic complexity, and evaluate system performance using realistic ray-tracing simulations.</p>
-            </div>
-
-            <!-- TAG BADGES -->
-            <!-- 
-            <p class="mt-0 mb-0 small">
-                
-            </p>
-             -->
-            <!-- Random Color -->
-            
-            <p class="mt-0 mb-0">
-                
-            </p>
-            
-            <!-- 
-            <p class="mt-0 mb-0">
-                
-                
-            </p>
-             -->
-
-        </div>
+            Anas Chaaban</span></p>
+    <p class="publication-venue"> <i>IEEE Transactions on Communications</i>,  <span class="publication-year">2026</span></p>
+    
+    
+    <div class="publication-actions">
+       <a class="publication-resource-link"
+   href="https://arxiv.org/pdf/2505.08938v3"
+   target="_blank" rel="noopener noreferrer"
+   
+   aria-label="Paper for Tri-Hybrid Multi-User Precoding Using Pattern-Reconfigurable Antennas: Fundamental Models and Practical Algorithms">[Paper]</a> <a class="publication-resource-link"
+   href="https://github.com/ZPinjun/Communication/tree/main/TCOM202607_Tri-HybridMIMO"
+   target="_blank" rel="noopener noreferrer"
+   
+   aria-label="Code for Tri-Hybrid Multi-User Precoding Using Pattern-Reconfigurable Antennas: Fundamental Models and Practical Algorithms">[Code]</a>
+      
     </div>
-</div>
+    
+  </div>
+</article>
 
-<div class="row no-gutters d-md-none border-bottom border-gray   lazy" data-src="/assets/images/covers/2025J2.png">
-    <div class="w-100  " style="background-color: rgba(255,255,255,0.9);">
-        <div class="d-flex align-items-start flex-column py-3 px-4">
-            <div class="mb-auto"></div>
-            <div>
-                <h5 class="mt-0 mb-1 font-weight-normal">Tri-Hybrid Multi-User Precoding Using Pattern-Reconfigurable Antennas: Fundamental Models and Practical Algorithms</h5>
-                <p class="mt-0 mb-0 small"><span class="text-body">
-            <b>Pinjun Zheng</b><sup>†</sup>, </span><span class="text-body">
-            Yuchen Zhang, </span><span class="text-body">
-            Tareq Y. Al-Naffouri, </span><span class="text-body">
-            Md. Jahangir Hossain, </span><span class="text-body">
-            Anas Chaaban</span><!--
-<mark>(<sup>†</sup> <i> corresponding author</i>)</mark>-->
-</p>
-                <p class="mt-0 mb-0 small"><i>IEEE Transactions on Communications</i>   <span class="badge badge-pill badge-publication badge-success">Journal</span> <span data-semantic-scholar-id=""></span></p>
-                <p class="mt-0 mb-0 small text-muted">In this work, we investigate a tri-hybrid MIMO architecture for multi-user communication that combines digital, analog, and antenna-domain precoding through the use of pattern-reconfigurable antennas. We develop two foundational models to characterize the tri-hybrid MIMO system, propose corresponding precoding algorithms with quadratic complexity, and evaluate system performance using realistic ray-tracing simulations.</p>
-                
-                <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
-                    
-                    
-                    <a target="_blank" href="https://arxiv.org/pdf/2505.08938v3">[Paper]</a>
-                    
-                    
-                    
-                    <a target="_blank" href="https://github.com/ZPinjun/Communication/tree/main/TCOM202607_Tri-HybridMIMO">[Code]</a>
-                    
-                    
-                </p>
-            </div>
-        </div>
-    </div>
-
-</div>    
+    
+      
+<article class="publication-item publication-item--illustrated">
   
-    <style>
-  .tag-badge {
-    display: inline-block;
-    padding: 0.35em 0.75em;
-    font-size: 0.7rem;
-    border-radius: 999px;
-    margin-right: 0.5em;
-    margin-bottom: 0.4em;
-    background-color: #f8f9fa;
-    color: black;
-    /* color: #343a40; */
-  }
-
-  .tag-badge-bio {
-    display: inline-block;
-    padding: 0.3em 0.75em;
-    font-size: 0.7rem;
-    font-weight: 500;
-    border-radius: 999px;
-    margin-right: 0.5em;
-    margin-bottom: 0.4em;
-    background-color: #ff796d;
-    color: #f8f9fa;
-    /* color: #343a40; */
-  }
-
-  .tag-bio {
-    color: #ff6f61;
-    font-weight: 500;
-  }
-
-  .award-badge {
-    display: inline-block;
-    padding: 0.35em 0.75em;
-    font-size: 0.7rem;
-    border-radius: 999px;
-    margin-right: 0.5em;
-    margin-bottom: 0.4em;
-    background-color: #FAFAD2;
-    color: #343a40;
-  }
-</style>
-
-
-<div class="d-none d-md-block">
-    <div class="row no-gutters border-bottom border-gray">
-        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3 d-flex align-items-center"><img data-src="/assets/images/covers/2025J1.png" alt="Electromagnetically Reconfigurable Fluid Antenna System for Wireless Communications: Design, Modeling, Algorithm, Fabrication, and Experiment" class="lazy w-100 rounded-sm" src="/assets/images/empty_300x200.png"></div>
-        <div class="col-md-9 col-xl-10 p-3 pl-md-0">
-            <h6 class="mt-0 mb-1 font-weight-normal">Electromagnetically Reconfigurable Fluid Antenna System for Wireless Communications: Design, Modeling, Algorithm, Fabrication, and Experiment</h6>
-            <p class="mt-0 mb-0 small"><span class="text-body">
+  <a class="publication-thumbnail" href="/assets/images/covers/2025J1.png" target="_blank" rel="noopener noreferrer" aria-label="Open illustration for Electromagnetically Reconfigurable Fluid Antenna System for Wireless Communications: Design, Modeling, Algorithm, Fabrication, and Experiment">
+    <img src="/assets/images/covers/2025J1.png" alt="Research illustration for Electromagnetically Reconfigurable Fluid Antenna System for Wireless Communications: Design, Modeling, Algorithm, Fabrication, and Experiment" loading="lazy" width="150" height="120">
+  </a>
+  
+  <div class="publication-content">
+    <h3 class="publication-title">Electromagnetically Reconfigurable Fluid Antenna System for Wireless Communications: Design, Modeling, Algorithm, Fabrication, and Experiment</h3>
+    <p class="publication-authors"><span class="text-body">
             Ruiqi Wang, </span><span class="text-body">
             <b>Pinjun Zheng</b><sup>†</sup>, </span><span class="text-body">
             Vijith Varma Kotte, </span><span class="text-body">
@@ -918,298 +310,91 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
             Yiming Yang, </span><span class="text-body">
             Muhammad Mahboob Ur Rahman, </span><span class="text-body">
             Tareq Y. Al-Naffouri, </span><span class="text-body">
-            Atif Shamim</span><!--
-<mark>(<sup>†</sup> <i> corresponding author</i>)</mark>-->
-</p>
-            <p class="mt-0 mb-0 small"> <i>IEEE Journal on Selected Areas in Communications</i>   <span data-semantic-scholar-id=""></span></p>
-            <p class="mt-0 mb-0 small"> <span class="badge badge-pill badge-publication badge-success">Journal</span></p>
-            <!-- <p class="mt-0 mb-1 small text-muted">This paper presents the concept, design, channel modeling, beamforming algorithm, prototype fabrication, and experimental measurement of an electromagnetically reconfigurable fluid antenna system (ER-FAS), in which each FAS array element features electromagnetic (EM) reconfigurability. Unlike most existing FAS works that investigate spatial reconfigurability, the proposed ER-FAS enables direct control over the EM characteristics of each element, allowing for dynamic radiation pattern reconfigurability.</p> -->
-
-            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
-                <a data-toggle="collapse" href="#abstract-electromagnetically-reconfigurable-fluid-antenna-system-for-wireless-communications-design-modeling-algorithm-fabrication-and-experiment" role="button" aria-expanded="false" aria-controls="abstract-electromagnetically-reconfigurable-fluid-antenna-system-for-wireless-communications-design-modeling-algorithm-fabrication-and-experiment">
-                    [Abstract]
-                </a>
-
-                
-                
-                <a target="_blank" href="https://ieeexplore.ieee.org/document/11216390">[Paper]</a>
-                
-                
-                
-                <a target="_blank" href="https://drive.google.com/drive/folders/1N7Z4iv3M9_8e8AcO7fdhbfgi6_8UU2PV?usp=sharing">[Data]</a>
-                
-                
-            </p>
-
-            <!-- Read More Button -->
-            <!-- <p class="mt-1 mb-1 small">
-                <a class="text-primary" data-toggle="collapse" href="#abstract-electromagnetically-reconfigurable-fluid-antenna-system-for-wireless-communications-design-modeling-algorithm-fabrication-and-experiment" role="button" aria-expanded="false" aria-controls="abstract-electromagnetically-reconfigurable-fluid-antenna-system-for-wireless-communications-design-modeling-algorithm-fabrication-and-experiment">
-                    Read more
-                </a>
-            </p> -->
-
-            <!-- Collapsible Abstract -->
-            <div class="collapse" id="abstract-electromagnetically-reconfigurable-fluid-antenna-system-for-wireless-communications-design-modeling-algorithm-fabrication-and-experiment">
-                <p class="small text-muted mb-0">This paper presents the concept, design, channel modeling, beamforming algorithm, prototype fabrication, and experimental measurement of an electromagnetically reconfigurable fluid antenna system (ER-FAS), in which each FAS array element features electromagnetic (EM) reconfigurability. Unlike most existing FAS works that investigate spatial reconfigurability, the proposed ER-FAS enables direct control over the EM characteristics of each element, allowing for dynamic radiation pattern reconfigurability.</p>
-            </div>
-
-            <!-- TAG BADGES -->
-            <!-- 
-            <p class="mt-0 mb-0 small">
-                
-            </p>
-             -->
-            <!-- Random Color -->
-            
-            <p class="mt-0 mb-0">
-                
-            </p>
-            
-            <!-- 
-            <p class="mt-0 mb-0">
-                
-                
-            </p>
-             -->
-
-        </div>
+            Atif Shamim</span></p>
+    <p class="publication-venue"> <i>IEEE Journal on Selected Areas in Communications</i>,  <span class="publication-year">2025</span></p>
+    
+    
+    <div class="publication-actions">
+       <a class="publication-resource-link"
+   href="https://ieeexplore.ieee.org/document/11216390"
+   target="_blank" rel="noopener noreferrer"
+   
+   aria-label="Paper for Electromagnetically Reconfigurable Fluid Antenna System for Wireless Communications: Design, Modeling, Algorithm, Fabrication, and Experiment">[Paper]</a> <a class="publication-resource-link"
+   href="https://drive.google.com/drive/folders/1N7Z4iv3M9_8e8AcO7fdhbfgi6_8UU2PV?usp=sharing"
+   target="_blank" rel="noopener noreferrer"
+   
+   aria-label="Data for Electromagnetically Reconfigurable Fluid Antenna System for Wireless Communications: Design, Modeling, Algorithm, Fabrication, and Experiment">[Data]</a>
+      
     </div>
-</div>
-
-<div class="row no-gutters d-md-none border-bottom border-gray   lazy" data-src="/assets/images/covers/2025J1.png">
-    <div class="w-100  " style="background-color: rgba(255,255,255,0.9);">
-        <div class="d-flex align-items-start flex-column py-3 px-4">
-            <div class="mb-auto"></div>
-            <div>
-                <h5 class="mt-0 mb-1 font-weight-normal">Electromagnetically Reconfigurable Fluid Antenna System for Wireless Communications: Design, Modeling, Algorithm, Fabrication, and Experiment</h5>
-                <p class="mt-0 mb-0 small"><span class="text-body">
-            Ruiqi Wang, </span><span class="text-body">
-            <b>Pinjun Zheng</b><sup>†</sup>, </span><span class="text-body">
-            Vijith Varma Kotte, </span><span class="text-body">
-            Sakandar Rauf, </span><span class="text-body">
-            Yiming Yang, </span><span class="text-body">
-            Muhammad Mahboob Ur Rahman, </span><span class="text-body">
-            Tareq Y. Al-Naffouri, </span><span class="text-body">
-            Atif Shamim</span><!--
-<mark>(<sup>†</sup> <i> corresponding author</i>)</mark>-->
-</p>
-                <p class="mt-0 mb-0 small"><i>IEEE Journal on Selected Areas in Communications</i>   <span class="badge badge-pill badge-publication badge-success">Journal</span> <span data-semantic-scholar-id=""></span></p>
-                <p class="mt-0 mb-0 small text-muted">This paper presents the concept, design, channel modeling, beamforming algorithm, prototype fabrication, and experimental measurement of an electromagnetically reconfigurable fluid antenna system (ER-FAS), in which each FAS array element features electromagnetic (EM) reconfigurability. Unlike most existing FAS works that investigate spatial reconfigurability, the proposed ER-FAS enables direct control over the EM characteristics of each element, allowing for dynamic radiation pattern reconfigurability.</p>
-                
-                <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
-                    
-                    
-                    <a target="_blank" href="https://ieeexplore.ieee.org/document/11216390">[Paper]</a>
-                    
-                    
-                    
-                    <a target="_blank" href="https://drive.google.com/drive/folders/1N7Z4iv3M9_8e8AcO7fdhbfgi6_8UU2PV?usp=sharing">[Data]</a>
-                    
-                    
-                </p>
-            </div>
-        </div>
-    </div>
-
-</div>    
-  
-    <style>
-  .tag-badge {
-    display: inline-block;
-    padding: 0.35em 0.75em;
-    font-size: 0.7rem;
-    border-radius: 999px;
-    margin-right: 0.5em;
-    margin-bottom: 0.4em;
-    background-color: #f8f9fa;
-    color: black;
-    /* color: #343a40; */
-  }
-
-  .tag-badge-bio {
-    display: inline-block;
-    padding: 0.3em 0.75em;
-    font-size: 0.7rem;
-    font-weight: 500;
-    border-radius: 999px;
-    margin-right: 0.5em;
-    margin-bottom: 0.4em;
-    background-color: #ff796d;
-    color: #f8f9fa;
-    /* color: #343a40; */
-  }
-
-  .tag-bio {
-    color: #ff6f61;
-    font-weight: 500;
-  }
-
-  .award-badge {
-    display: inline-block;
-    padding: 0.35em 0.75em;
-    font-size: 0.7rem;
-    border-radius: 999px;
-    margin-right: 0.5em;
-    margin-bottom: 0.4em;
-    background-color: #FAFAD2;
-    color: #343a40;
-  }
-</style>
-
-
-<div class="d-none d-md-block">
-    <div class="row no-gutters border-bottom border-gray">
-        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3 d-flex align-items-center"><img data-src="/assets/images/covers/2024J6.png" alt="Mutual Coupling in RIS-Aided Communication: Model Training and Experimental Validation" class="lazy w-100 rounded-sm" src="/assets/images/empty_300x200.png"></div>
-        <div class="col-md-9 col-xl-10 p-3 pl-md-0">
-            <h6 class="mt-0 mb-1 font-weight-normal">Mutual Coupling in RIS-Aided Communication: Model Training and Experimental Validation</h6>
-            <p class="mt-0 mb-0 small"><span class="text-body">
-            <b>Pinjun Zheng</b>, </span><span class="text-body">
-            Ruiqi Wang<sup>†</sup>, </span><span class="text-body">
-            Atif Shamim, </span><span class="text-body">
-            Tareq Y. Al-Naffouri</span><!--
-<mark>(<sup>†</sup> <i> corresponding author</i>)</mark>-->
-</p>
-            <p class="mt-0 mb-0 small"> <i>IEEE Transactions on Wireless Communications</i>   <span data-semantic-scholar-id=""></span></p>
-            <p class="mt-0 mb-0 small"> <span class="badge badge-pill badge-publication badge-success">Journal</span></p>
-            <!-- <p class="mt-0 mb-1 small text-muted">We show how to properly model the RIS mutual coupling within the cascaded channel and how to obtain a realistic evaluation of the scattering parameters in the model based on a real RIS prototype. Both full-wave simulation and experimental validation are conducted.</p> -->
-
-            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
-                <a data-toggle="collapse" href="#abstract-mutual-coupling-in-ris-aided-communication-model-training-and-experimental-validation" role="button" aria-expanded="false" aria-controls="abstract-mutual-coupling-in-ris-aided-communication-model-training-and-experimental-validation">
-                    [Abstract]
-                </a>
-
-                
-                
-                <a target="_blank" href="https://ieeexplore.ieee.org/document/10669140">[Paper]</a>
-                
-                
-            </p>
-
-            <!-- Read More Button -->
-            <!-- <p class="mt-1 mb-1 small">
-                <a class="text-primary" data-toggle="collapse" href="#abstract-mutual-coupling-in-ris-aided-communication-model-training-and-experimental-validation" role="button" aria-expanded="false" aria-controls="abstract-mutual-coupling-in-ris-aided-communication-model-training-and-experimental-validation">
-                    Read more
-                </a>
-            </p> -->
-
-            <!-- Collapsible Abstract -->
-            <div class="collapse" id="abstract-mutual-coupling-in-ris-aided-communication-model-training-and-experimental-validation">
-                <p class="small text-muted mb-0">We show how to properly model the RIS mutual coupling within the cascaded channel and how to obtain a realistic evaluation of the scattering parameters in the model based on a real RIS prototype. Both full-wave simulation and experimental validation are conducted.</p>
-            </div>
-
-            <!-- TAG BADGES -->
-            <!-- 
-            <p class="mt-0 mb-0 small">
-                
-            </p>
-             -->
-            <!-- Random Color -->
-            
-            <p class="mt-0 mb-0">
-                
-            </p>
-            
-            <!-- 
-            <p class="mt-0 mb-0">
-                
-                
-            </p>
-             -->
-
-        </div>
-    </div>
-</div>
-
-<div class="row no-gutters d-md-none border-bottom border-gray   lazy" data-src="/assets/images/covers/2024J6.png">
-    <div class="w-100  " style="background-color: rgba(255,255,255,0.9);">
-        <div class="d-flex align-items-start flex-column py-3 px-4">
-            <div class="mb-auto"></div>
-            <div>
-                <h5 class="mt-0 mb-1 font-weight-normal">Mutual Coupling in RIS-Aided Communication: Model Training and Experimental Validation</h5>
-                <p class="mt-0 mb-0 small"><span class="text-body">
-            <b>Pinjun Zheng</b>, </span><span class="text-body">
-            Ruiqi Wang<sup>†</sup>, </span><span class="text-body">
-            Atif Shamim, </span><span class="text-body">
-            Tareq Y. Al-Naffouri</span><!--
-<mark>(<sup>†</sup> <i> corresponding author</i>)</mark>-->
-</p>
-                <p class="mt-0 mb-0 small"><i>IEEE Transactions on Wireless Communications</i>   <span class="badge badge-pill badge-publication badge-success">Journal</span> <span data-semantic-scholar-id=""></span></p>
-                <p class="mt-0 mb-0 small text-muted">We show how to properly model the RIS mutual coupling within the cascaded channel and how to obtain a realistic evaluation of the scattering parameters in the model based on a real RIS prototype. Both full-wave simulation and experimental validation are conducted.</p>
-                
-                <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
-                    
-                    
-                    <a target="_blank" href="https://ieeexplore.ieee.org/document/10669140">[Paper]</a>
-                    
-                    
-                </p>
-            </div>
-        </div>
-    </div>
-
-</div>    
-  
-
-  <h6 class="d-block p-3 mt-0 mb-0 text-right font-weight-normal">
-    <a href="/research">All Research <i class="fas fa-angle-double-right"></i></a>
-  </h6>
-</div>
+    
+  </div>
+</article>
 
     
-
+      
+<article class="publication-item publication-item--illustrated">
+  
+  <a class="publication-thumbnail" href="/assets/images/covers/2024J6.png" target="_blank" rel="noopener noreferrer" aria-label="Open illustration for Mutual Coupling in RIS-Aided Communication: Model Training and Experimental Validation">
+    <img src="/assets/images/covers/2024J6.png" alt="Research illustration for Mutual Coupling in RIS-Aided Communication: Model Training and Experimental Validation" loading="lazy" width="150" height="120">
+  </a>
+  
+  <div class="publication-content">
+    <h3 class="publication-title">Mutual Coupling in RIS-Aided Communication: Model Training and Experimental Validation</h3>
+    <p class="publication-authors"><span class="text-body">
+            <b>Pinjun Zheng</b>, </span><span class="text-body">
+            Ruiqi Wang<sup>†</sup>, </span><span class="text-body">
+            Atif Shamim, </span><span class="text-body">
+            Tareq Y. Al-Naffouri</span></p>
+    <p class="publication-venue"> <i>IEEE Transactions on Wireless Communications</i>,  <span class="publication-year">2024</span></p>
+    
+    
+    <div class="publication-actions">
+       <a class="publication-resource-link"
+   href="https://ieeexplore.ieee.org/document/10669140"
+   target="_blank" rel="noopener noreferrer"
+   
+   aria-label="Paper for Mutual Coupling in RIS-Aided Communication: Model Training and Experimental Validation">[Paper]</a>
+      
+    </div>
+    
   </div>
+</article>
+
+    
+  </div>
+</section>
+
+
+
+      </main>
+      <footer class="site-footer">
+  <div class="footer-row">
+    <span>Last updated: Nov 2026</span>
+  </div>
+  
+  <div class="footer-visitor-map"><details class="visitor-map">
+  <summary>Visitor Map</summary>
+  
+  <div class="visitor-map-embed"><a href="https://info.flagcounter.com/P3pe" target="_blank" rel="noopener noreferrer"><img src="https://s01.flagcounter.com/map/P3pe/size_l/txt_333333/border_E5E7EB/pageviews_1/viewers_3/flags_0/" alt="Visitor map" border="0"></a></div>
+  
+</details>
 </div>
-
-    </div>
-    <footer class="footer mt-3">
-  <!-- <div class="container-fluid"> -->
-  <div class="container pl-4" style="max-width: 1700px;">
-    <div class="row justify-content-center">
-      <div class="col-12 col-lg-10">
-        <div class="row my-3">
-          <div class="col-12">
-            <div class="text-muted">
-              <small>
-                Site powered by <a href="https://github.com/luost26/academic-homepage" target="_blank"><i class="fas fa-pencil-ruler"></i> academic-homepage</a>.<br>
-                Last updated: Oct 2026
-              </small>
-            </div>
-          </div>
-          <!-- <div class="col-6">
-            <div class="text-right text-muted">
-              <a href="https://github.com/luost26/academic-homepage" target="_blank"><i class="fas fa-pencil-ruler"></i> academic-homepage</a>
-            </div>
-          </div> -->
-        </div>
-      </div>
-    </div>
-  </div>
+  
 </footer>
 
+    </div>
+  </div>
+  <script src="/assets/js/common.js?v=1793948304" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" defer></script>
+<script src="/assets/js/bubble_visual_hash.js?v=1793948304" defer></script>
+<script src="/assets/js/semantic_scholar_citation_count.js?v=1793948304" defer></script>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/github-buttons/2.14.2/buttons.min.js" integrity="sha512-OYwZx04hKFeFNYrWxIyo3atgGpb+cxU0ENWBZs72X7T9U+NoHPM1ftUn/Mfw7dRDXrqWA6M1wBg6z6fGE32aeA==" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            renderMathInElement(document.body, {
-              delimiters: [
-                  {left: '$$', right: '$$', display: true},
-                  {left: '$', right: '$', display: false}
-              ],
-              throwOnError : false
-            });
-        });
-    </script>
-    <script src="/assets/js/common.js?v=1790907672"></script>
-    <script src="/assets/js/bubble_visual_hash.js?v=1790907672"></script>
-    <script src="/assets/js/semantic_scholar_citation_count.js?v=1790907672"></script>
 </body>
 </html>

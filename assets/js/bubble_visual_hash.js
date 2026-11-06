@@ -120,3 +120,4 @@ canvases.forEach(function (canvas) {
     var bubbleInfo = createBubbleInfo(createHashGroupForString(hash), 8, width, height);
     drawBubble(canvas, bubbleInfo);
 });
+
