@@ -15,6 +15,9 @@ html { scroll-behavior: smooth; scroll-padding-top: 28px; }
 body { margin: 0; background: #fff; color: var(--ink); font-family: var(--serif); font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
 h1, h2, h3, h4, h5, h6 { color: var(--ink); line-height: 1.35; }
 p { margin: 0 0 15px; }
+.person-list { color: var(--ink); font-size: 13px; font-weight: 400; line-height: 1.6; }
+.person-list .person-name { color: inherit; }
+.person-list .person-name--self { font-weight: 700; }
 a { color: var(--accent); text-decoration: none; text-underline-offset: 3px; }
 a:hover { color: var(--accent-hover); text-decoration: underline; }
 a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
@@ -93,9 +96,7 @@ img { max-width: 100%; height: auto; }
 .publication-item { margin-bottom: 21px; }
 .publication-list > .publication-item:last-child, .year-publications > .filter-item:last-child .publication-item, .year-publications > .last-visible .publication-item { margin-bottom: 0; }
 .publication-title { margin: 0 0 5px; font-size: 16px; font-weight: 700; line-height: 1.5; }
-.publication-authors { margin: 0 0 3px; color: var(--muted); font-size: 13px; line-height: 1.6; }
-.publication-authors .text-body { color: var(--muted) !important; }
-.publication-authors strong, .publication-authors b { color: var(--ink); font-weight: 700; }
+.publication-authors { margin: 0 0 3px; }
 .publication-venue { display: inline; margin: 0; font-size: 14px; color: #535353; line-height: 1.6; }
 .publication-year { color: var(--muted); white-space: nowrap; }
 .publication-status { margin-left: 7px; color: var(--muted); font-size: 12px; }
@@ -160,8 +161,7 @@ img { max-width: 100%; height: auto; }
 .record-content { min-width: 0; }
 .record-title { margin: 0 0 4px; font-size: 15px; font-weight: 700; line-height: 1.45; }
 .record-meta { margin: 0; font-size: 13px; line-height: 1.65; }
-.record-presenters { margin: 3px 0 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
-.record-presenters strong { color: var(--ink); }
+.record-presenters { margin: 3px 0 0; }
 .service-subheading { margin: 0 0 12px; font-size: 14px; font-weight: 700; }
 .service-subheading:not(:first-of-type) { margin-top: 20px; }
 .service-list { margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.7; list-style-type: square; }
@@ -251,7 +251,7 @@ img { max-width: 100%; height: auto; }
     .news-date { font-size: 11px; }
     .news-list { font-size: 13px; }
     .publication-title { font-size: 15px; }
-    .publication-authors { font-size: 12px; }
+    .person-list { font-size: 12px; }
     .publication-venue { font-size: 13px; }
     .page-heading > p, .research-intro .research-list { font-size: 14px; }
     .experience-line { grid-template-columns: minmax(0, 1fr); gap: 3px; font-size: 14px; }
